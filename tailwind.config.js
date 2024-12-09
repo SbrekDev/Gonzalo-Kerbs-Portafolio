@@ -13,9 +13,10 @@ export default {
         },
         secondary: "#393e46",
         accent: "#00adb5",
+        accent2: "#00afee"
       },
       dropShadow: {
-        'accent': '#00adb5'
+        'accent': '#7a30b0'
       },
     },
   },

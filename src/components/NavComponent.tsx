@@ -14,12 +14,17 @@ const NavComponent = () => {
         navClick ? "h-56 z-50" : "h-12"
       } w-screen lg:h-20 lg:w-screen absolute lg:sticky top-0 flex flex-col lg:flex-row lg:justify-center lg:items-center bg-primary-dark/95 lg:bg-transparent text-primary-light lg:text-primary-dark shadow-md backdrop:blur-lg z-50`}
     >
-      <button
-        onClick={() => desplegarNav()}
-        className={`w-screen h-12 flex justify-end items-center lg:hidden`}
-      >
-        <i className={`fa-solid fa-bars text-primary-light text-2xl px-5`} />
-      </button>
+      <div className='flex justify-between items-center px-5'>
+        <h3 className="lg:hidden font-extralight text-primary-light">
+          G<span className='font-extrabold text-accent'>K</span>
+        </h3>
+        <button
+          onClick={() => desplegarNav()}
+          className={`w-screen h-12 flex justify-end items-center lg:hidden`}
+        >
+          <i className={`fa-solid fa-bars text-primary-light text-2xl`} />
+        </button>
+      </div>
       <div
         className={`${
           navClick ? "" : "hidden lg:flex"

@@ -1,4 +1,49 @@
 const SkillsComponent = () => {
+  const lenguajes = [
+    ["HTML", "Profesional", "html5"],
+    ["CSS", "Profesional", "css3"],
+    ["JAVASCRIPT", "Profesional", "javascript"],
+    ["PHP", "Intermedio", "php"],
+    ["JAVA", "Intermedio", "java"],
+    ["C#", "Aprendiz", "csharp"],
+    ["PYTHON", "Intermedio", "python"],
+    ["SQL", "Avanzado", "azuresqldatabase"],
+  ];
+
+  const tecnologias = [
+    ["TYPESCRIPT", "Profesional", "typescript"],
+    ["REACT", "Profesional", "react"],
+    ["REACT NATIVE", "Intermedio", "react"],
+    ["NEXT JS", "Intermedio", "nextjs"],
+    ["VUE", "Intermedio", "vuejs"],
+    ["Angular", "Intermedio", "angular"],
+    ["NODE JS", "Profesional", "nodejs"],
+    ["GIT", "Avanzado", "git"],
+    ["MYSQL", "Avanzado", "mysql"],
+    ["POSTGRE SQL", "Intermedio", "postgresql"],
+    ["MONGO DB", "Avanzado", "mongodb"],
+    ["SEQUELIZE", "Avanzado", "sequelize"],
+    ["EXPRESS", "Avanzado", "nodejs"],
+  ];
+
+  const complementos = [
+    ["ADOBE PHOTOSHOP", "Profesional", "photoshop"],
+    ["ADOBE PREMIERE", "Avanzado", "premierepro"],
+    ["ADOBE ILLUSTRATOR", "Intermedio", "illustrator"],
+    ["AUTODESK AUTOCAD", "Intermedio", "elixir"],
+    ["AUTODESK FUSION 360", "Intermedio", "elixir"],
+  ];
+
+  const certificaciones = [
+    ["Responsive Web Design", "/cv/Responsive Web Design Certificado.pdf"],
+    ["Responsive Web Design", "/cv/Responsive Web Design Certificado.pdf"],
+    ["Responsive Web Design", "/cv/Responsive Web Design Certificado.pdf"],
+    ["Responsive Web Design", "/cv/Responsive Web Design Certificado.pdf"],
+    ["Responsive Web Design", "/cv/Responsive Web Design Certificado.pdf"],
+    ["Responsive Web Design", "/cv/Responsive Web Design Certificado.pdf"],
+    ["Responsive Web Design", "/cv/Responsive Web Design Certificado.pdf"],
+  ];
+
   return (
     <div className="relative bg-primary-dark text-primary-light py-5">
       <section className="profile" id="profile">
@@ -66,142 +111,62 @@ const SkillsComponent = () => {
               </div>
             </div>
             <div className="flex flex-col gap-5 mt-3 py-5 mx-3 shadow-2xl rounded-md">
+              <h3 className="text-3xl text-center mb-5">LENGUAJES</h3>
+              {lenguajes.map((lenguaje) => (
+                <div className="flex justify-between items-center gap-4  w-full px-5 py-3 bg-gradient-to-r from-accent/90 to-transparent">
+                  <div>
+                    <p className="font-semibold">{lenguaje[0]}</p>
+                    <p className=" text-sm">{lenguaje[1]}</p>
+                  </div>
+                  <i
+                    className={`devicon-${lenguaje[2]}-plain text-accent text-4xl`}
+                  />
+                </div>
+              ))}
+            </div>
+            <div className="flex flex-col gap-5 mt-3 py-5 mx-3 shadow-2xl rounded-md">
               <h3 className="text-3xl text-center mb-5">TECNOLOGÍAS</h3>
-              <div className="grid gap-3 font-extralight text-xl">
+              {tecnologias.map((tecnologia) => (
                 <div className="flex justify-between items-center gap-4  w-full px-5 py-3 bg-gradient-to-r from-accent/80 to-transparent">
                   <div>
-                    <p className="font-semibold">HTML</p>
-                    <p className=" text-sm">Profesional</p>
+                    <p className="font-semibold">{tecnologia[0]}</p>
+                    <p className=" text-sm">{tecnologia[1]}</p>
                   </div>
-                  <i className="devicon-html5-plain text-accent text-4xl" />
+                  <i
+                    className={`devicon-${tecnologia[2]}-plain text-accent text-4xl`}
+                  />
                 </div>
-                <div className="flex justify-between items-center gap-4  w-full px-5 py-3 bg-gradient-to-r from-accent/80 to-transparent">
-                  <div>
-                    <p className="font-semibold">CSS</p>
-                    <p className=" text-sm">Profesional</p>
-                  </div>
-                  <i className="devicon-css3-plain text-accent text-4xl" />
-                </div>
-                <div className="flex justify-between items-center gap-4  w-full px-5 py-3 bg-gradient-to-r from-accent/80 to-transparent">
-                  <div>
-                    <p className="font-semibold">JAVASCRIPT</p>
-                    <p className=" text-sm">Profesional</p>
-                  </div>
-                  <i className="devicon-javascript-plain text-accent text-4xl" />
-                </div>
-                <div className="flex justify-between items-center gap-4  w-full px-5 py-3 bg-gradient-to-r from-accent/80 to-transparent">
-                  <div>
-                    <p className="font-semibold">REACT</p>
-                    <p className=" text-sm">Profesional</p>
-                  </div>
-                  <i className="devicon-react-plain text-accent text-4xl" />
-                </div>
-                <div className="flex gap-4">
-                  <i className="devicon-tailwindcss-original" />
-                  <p>TAILWIND</p>
-                </div>
-                <div className="flex gap-4">
-                  <i className="devicon-angular-plain" />
-                  <p>ANGULAR</p>
-                </div>
-                <div className="flex gap-4">
-                  <i className="devicon-git-plain" />
-                  <p>GIT</p>
-                </div>
-                <div className="flex gap-4">
-                  <i className="devicon-bitbucket-original" />
-                  <p>BITBUCKET</p>
-                </div>
-                <div className="flex gap-4">
-                  <i className="devicon-vscode-plain" />
-                  <p>VSCODE</p>
-                </div>
-              </div>
-              <h3>Tecnologias en Aprendizaje</h3>
-              <div className="languajes__learning">
-                <div className="flex gap-4">
-                  <i className="devicon-astro-plain" />
-                  <p>ASTRO</p>
-                </div>
-                <div className="flex gap-4">
-                  <i className="devicon-python-plain" />
-                  <p>PYTHON</p>
-                </div>
-                <div className="flex gap-4">
-                  <i className="devicon-typescript-plain" />
-                  <p>TYPESCRIPT</p>
-                </div>
-                <div className="flex gap-4">
-                  <i className="devicon-vuejs-plain" />
-                  <p>VUE</p>
-                </div>
-              </div>
+              ))}
             </div>
 
-            <div className="flex flex-col justify-center items-center gap-5 p-6 mt-3  py-5 mx-3 shadow-2xl rounded-md">
-              <h3 className="text-3xl text-center mb-5">Certificaciones</h3>
-              <div className="certification__details-content">
-                <a
-                  href="/cv/Responsive Web Design Certificado.pdf"
-                  download="Responsive Web Design Certificado"
-                >
-                  <i className="fa-solid fa-graduation-cap" />
-                  <p>Responsive Web Design</p>
-                </a>
-                <a
-                  href="/cv/Coursera HTML, CSS, JS Certificado.pdf"
-                  download="Coursera HTML, CSS, JS Certificado"
-                >
-                  <i className="fa-solid fa-graduation-cap" />
-                  <p>HTML - CSS - JS</p>
-                </a>
-                <a
-                  href="/cv/Coursera Bootstrap 4 Certificado.pdf"
-                  download="Coursera Bootstrap 4 Certificado"
-                >
-                  <i className="fa-solid fa-graduation-cap" />
-                  <p>Bootstrap</p>
-                </a>
-                <a
-                  href="/cv/Coursera Python Certificado.pdf"
-                  download="Coursera Python Certificado"
-                >
-                  <i className="fa-solid fa-graduation-cap" />
-                  <p>Crash Python</p>
-                </a>
-                <a
-                  href="/cv/Diseño de Videojuegos Diploma.pdf"
-                  download="Diseño de Videojuegos Diploma"
-                >
-                  <i className="fa-solid fa-graduation-cap" />
-                  <p>Videogames Design</p>
-                </a>
-                <a href="#">
-                  <i className="fa-solid fa-arrow-up-right-from-square" />
-                  <p>Más</p>
-                </a>
-              </div>
-
-              <div className="profile__skills">
-                <h3>Software Complementario</h3>
-                <div className="languajes__design">
-                  <div className="languaje__item">
-                    <i className="devicon-illustrator-plain" />
-                    <p>ADOBE ILLUSTRATOR</p>
+            <div className="flex flex-col gap-5 mt-3 py-5 mx-3 shadow-2xl rounded-md">
+              <h3 className="text-3xl text-center mb-5">COMPLEMENTOS</h3>
+              {complementos.map((complemento) => (
+                <div className="flex justify-between items-center gap-4  w-full px-5 py-3 bg-gradient-to-r from-accent2/80 to-transparent">
+                  <div>
+                    <p className="font-semibold">{complemento[0]}</p>
+                    <p className=" text-sm">{complemento[1]}</p>
                   </div>
-                  <div className="languaje__item">
-                    <i className="devicon-aftereffects-plain" />
-                    <p>ADOBE AFTEREFFECTS</p>
-                  </div>
-                  <div className="languaje__item">
-                    <i className="devicon-photoshop-plain" />
-                    <p>ADOBE PHOTOSHOP</p>
-                  </div>
-                  <div className="languaje__item">
-                    <i className="devicon-premierepro-plain" />
-                    <p>ADOBE PREMIERE</p>
-                  </div>
+                  <i
+                    className={`devicon-${complemento[2]}-plain text-accent2 text-4xl`}
+                  />
                 </div>
+              ))}
+            </div>
+
+            <div className="flex flex-col justify-center items-center gap-5 p-6 mt-3  py-5 shadow-2xl rounded-md">
+              <h3 className="text-3xl text-center mb-5">CERTIFICACIONES</h3>
+              <div className="grid grid-cols-2 gap-3">
+                {certificaciones.map((certificacion) => (
+                  <a
+                    className="bg-secondary rounded-md p-3 flex flex-col justify-center items-center gap-2"
+                    href={certificacion[1]}
+                    download={certificacion[0]}
+                  >
+                    <i className="fa-solid fa-graduation-cap text-3xl" />
+                    <p className="text-center font-extralight">{certificacion[0]}</p>
+                  </a>
+                ))}
               </div>
             </div>
           </div>
