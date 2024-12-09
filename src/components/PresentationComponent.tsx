@@ -13,7 +13,7 @@ const PresentationComponent = () => {
               className="absolute size-72"
             />
             <img
-              src="public/images/profile__img2.webp"
+              src="images/profile__img2.webp"
               alt="retrato gonzalo"
               className="w-56 drop-shadow-lg"
             />
