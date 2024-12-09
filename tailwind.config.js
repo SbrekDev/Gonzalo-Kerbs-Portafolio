@@ -14,6 +14,9 @@ export default {
         secondary: "#393e46",
         accent: "#00adb5",
       },
+      dropShadow: {
+        'accent': '#00adb5'
+      },
     },
   },
   plugins: [],

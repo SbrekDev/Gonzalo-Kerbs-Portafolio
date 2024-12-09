@@ -19,6 +19,10 @@
 -moz-box-shadow: -2px 0px 30px -4px rgba(0,0,0,.7) inset;
 }
 
+.accent-shadow{
+  filter: drop-shadow(0 0 .35rem #00adb5);
+}
+
 
 
 
