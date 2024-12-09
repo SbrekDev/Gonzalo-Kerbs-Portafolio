@@ -1,25 +1,18 @@
 const ProjectsComponent = () => {
   return (
     <>
-      <section className="projects relative " id="projects">
-        <div className="absolute w-full -z-10 overflow-hidden top-0">
+      <section className="relative bg-accent" id="projects">
+        <div className="absolute w-full overflow-hidden top-0">
           <img
             src="/wave.svg"
             alt="animated waves"
             className="w-full h-full rotate-180 object-cover"
           />
         </div>
-        <div className="projects__wrapper">
-          <div className="projects__polygon pr--1"></div>
-        </div>
-        <div className="projects__wrapper">
-          <div className="projects__polygon pr--2"></div>
-        </div>
-        <div className="projects__wrapper">
-          <div className="projects__polygon pr--3"></div>
-        </div>
-        <div className="">
-          <h2 className="text-primary-light">PORTFOLIO PERSONAL</h2>
+        <div className="pt-28">
+          <h2 className="text-primary-dark text-3xl text-center mb-3">
+            PORTFOLIO
+          </h2>
           <div className="portfolio__project-container">
             <article className="portfolio__project pj-1">
               <a
