@@ -159,12 +159,14 @@ const SkillsComponent = () => {
               <div className="grid grid-cols-2 gap-3">
                 {certificaciones.map((certificacion) => (
                   <a
-                    className="bg-secondary rounded-md p-3 flex flex-col justify-center items-center gap-2"
+                    className="bg-gradient-to-b from-transparent to-secondary/70 rounded-md p-3 flex flex-col justify-center items-center gap-2"
                     href={certificacion[1]}
                     download={certificacion[0]}
                   >
-                    <i className="fa-solid fa-graduation-cap text-3xl" />
-                    <p className="text-center font-extralight">{certificacion[0]}</p>
+                    <i className="fa-solid fa-graduation-cap text-3xl text-accent" />
+                    <p className="text-center font-extralight">
+                      {certificacion[0]}
+                    </p>
                   </a>
                 ))}
               </div>
