@@ -14,7 +14,7 @@ function App() {
     <>
       <div
         className="h-screen w-screen bg-fixed bg-cover bg-center absolute -z-10"
-        style={{ backgroundImage: 'url("src/images/background.webp")' }}
+        style={{ backgroundImage: 'url("public/images/background.webp")' }}
       ></div>
       <div className="mt-0 relative">
         <NavComponent />
