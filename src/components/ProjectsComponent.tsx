@@ -1,21 +1,14 @@
 import { useState } from "react";
 import ReactModal from "react-modal";
+import { Proyecto } from "../types";
 
-type Proyecto = {
-  nombre: string;
-  tags: string[];
-  iconos: string[];
-  pathImg: string;
-  url: string;
-};
-
-const proyectos: Proyecto[] = [
+const proyectos = [
   {
     nombre: "Quique Frío",
     tags: ["React", "TailwindCSS", "TypeScript", "PWA", "Vite"],
     iconos: ["react", "tailwindcss", "typescript", "vite"],
     pathImg: "projectImages/quiquefrio.png",
-    url: "",
+    url: "https://www.youtube.com/embed/RRw6ENd5vUY",
   },
   {
     nombre: "Dev Web Camp",
@@ -40,38 +33,33 @@ const proyectos: Proyecto[] = [
   },
 ];
 
-// Configura el elemento raíz de la aplicación
 ReactModal.setAppElement("#root");
 
 const ProjectsComponent = () => {
-  // Almacena el índice del proyecto seleccionado o null si no hay modal abierto
-  const [selectedProjectIndex, setSelectedProjectIndex] = useState<
-    number | null
-  >(null);
+  const [selectedProject, setSelectedProject] = useState<Proyecto | null>(null);
 
-  // Abrir modal para un proyecto específico
-  function openModal(index: number) {
-    setSelectedProjectIndex(index);
+  function openModal(proyecto : Proyecto) {
+    setSelectedProject(proyecto);
   }
 
-  // Cerrar modal
   function closeModal() {
-    setSelectedProjectIndex(null);
+    setSelectedProject(null);
   }
 
   return (
     <>
       <section className="relative bg-primary-light" id="projects">
+        {/* Contenido previo omitido por brevedad */}
         <div className="pb-14 pt-10 flex flex-col justify-center items-center gap-5 p-5 mx-3 shadow-xl rounded-md">
           <h3 className="text-primary-dark text-3xl text-center mb-3">
             PROYECTOS
           </h3>
           <div className="grid gap-5">
-            {proyectos.map((proyecto, index) => (
+            {proyectos.map((proyecto) => (
               <div key={proyecto.nombre}>
                 <article>
                   <div
-                    onClick={() => openModal(index)}
+                    onClick={() => openModal(proyecto)}
                     className="border border-accent shadow-lg text-center flex flex-col"
                   >
                     <div className="flex flex-col gap-2 pb-2">
@@ -94,39 +82,52 @@ const ProjectsComponent = () => {
             ))}
           </div>
         </div>
-        {selectedProjectIndex !== null && (
+        {selectedProject && (
           <ReactModal
-            isOpen={selectedProjectIndex !== null}
+            isOpen={!!selectedProject}
             onRequestClose={closeModal}
-            className="bg-white rounded max-w-lg w-full shadow-2xl mx-5 relative text-center font-extralight flex flex-col gap-5"
-            overlayClassName="fixed inset-0 bg-black bg-opacity-10 flex items-center justify-center"
+            className="outline-none backdrop-blur-md bg-primary-light/90 rounded max-w-lg w-full shadow-2xl mx-5 relative text-center font-extralight flex flex-col gap-5"
+            overlayClassName="outline-none fixed inset-0 bg-black bg-opacity-40 backdrop-blur-md flex items-center justify-center"
             contentLabel="Project Modal"
           >
-            <button className="absolute top-4 right-4" onClick={closeModal}>
-              <i className="fa-solid fa-circle-xmark text-accent text-2xl"></i>
-            </button>
+            <h3 className="font-extralight text-primary-light absolute text-6xl top-[-100px] left-0 right-0 drop-shadow-xl">
+              G<span className="font-extrabold text-accent">K</span>
+            </h3>
             <div>
-              <img
-                src={proyectos[selectedProjectIndex].pathImg}
-                alt={proyectos[selectedProjectIndex].nombre}
-              />
+              <iframe
+                className="w-full rounded-s-md rounded-se-md"
+                src={selectedProject.url}
+                title="YouTube video player"
+                allow="autoplay"
+                allowFullScreen
+              ></iframe>
             </div>
             <h3 className="font-normal text-2xl uppercase">
-              {proyectos[selectedProjectIndex].nombre}
+              {selectedProject.nombre}
             </h3>
             <div className="flex flex-wrap gap-2 px-5">
-              {proyectos[selectedProjectIndex].tags.map((tag) => (
+              {selectedProject.tags.map((tag) => (
                 <p
                   key={tag}
-                  className=" px-2 py-1 rounded-md text-accent border border-accent font-semibold shadow-md flex-grow"
+                  className="bg-primary-light px-2 py-1 rounded-md text-accent border border-accent font-semibold shadow-md flex-grow"
                 >
                   {tag}
                 </p>
               ))}
             </div>
-            <div className="flex justify-center px-5 pb-5">
-              <button className="py-2 w-full bg-red-600 text-primary-light font-medium flex justify-center items-center gap-2 shadow-md">
+            <div className="flex justify-center px-5 pb-5 gap-3">
+              <a
+                href={selectedProject.url}
+                target="_blank"
+                className="py-2 w-full bg-red-600 text-primary-light font-medium flex justify-center items-center gap-2 shadow-md"
+              >
                 ver en Youtube <i className="fa-brands fa-youtube"></i>
+              </a>
+              <button
+                className="py-2 w-1/4 bg-secondary text-primary-light font-medium"
+                onClick={closeModal}
+              >
+                X
               </button>
             </div>
           </ReactModal>
