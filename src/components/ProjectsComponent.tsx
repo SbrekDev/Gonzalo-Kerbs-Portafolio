@@ -78,7 +78,7 @@ const ProjectsComponent = () => {
             desarrollo Backend.
           </p>
         </div>
-        <div className="pb-14 pt-10 flex flex-col justify-center items-center gap-5 p-5 mx-3 shadow-xl rounded-md">
+        <div className="pb-14 pt-10 flex flex-col justify-center items-center gap-5 p-5 mx-3 shadow-lg rounded-md">
           <h3 className="text-primary-dark text-3xl text-center mb-3 py-2 px-2 border-b border-primary-dark">
             PROYECTOS
           </h3>
@@ -148,6 +148,7 @@ const ProjectsComponent = () => {
                   </p>
                   <div className="absolute w-full -z-10 overflow-hidden bottom-0">
                     <img
+                      
                       src="/wave-accent.svg"
                       alt="animated waves"
                       className="w-full h-24 object-cover rounded-b-md"
