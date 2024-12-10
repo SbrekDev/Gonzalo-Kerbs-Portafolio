@@ -144,7 +144,10 @@ const SkillsComponent = () => {
             <div className="flex flex-col gap-5 mt-3 py-5 mx-3 shadow-2xl rounded-md">
               <h3 className="text-3xl text-center mb-5">LENGUAJES</h3>
               {lenguajes.map((lenguaje) => (
-                <div className="flex justify-between items-center gap-4  w-full px-5 py-3 bg-gradient-to-r from-accent/90 to-transparent">
+                <div
+                  key={Math.random() + Math.random()}
+                  className="flex justify-between items-center gap-4  w-full px-5 py-3 bg-gradient-to-r from-accent/90 to-transparent"
+                >
                   <div>
                     <p className="font-semibold">{lenguaje[0]}</p>
                     <p className=" text-sm">{lenguaje[1]}</p>
@@ -158,7 +161,10 @@ const SkillsComponent = () => {
             <div className="flex flex-col gap-5 mt-3 py-5 mx-3 shadow-2xl rounded-md">
               <h3 className="text-3xl text-center mb-5">TECNOLOGÍAS</h3>
               {tecnologias.map((tecnologia) => (
-                <div className="flex justify-between items-center gap-4  w-full px-5 py-3 bg-gradient-to-r from-accent/80 to-transparent">
+                <div
+                  key={Math.random() + Math.random()}
+                  className="flex justify-between items-center gap-4  w-full px-5 py-3 bg-gradient-to-r from-accent/80 to-transparent"
+                >
                   <div>
                     <p className="font-semibold">{tecnologia[0]}</p>
                     <p className=" text-sm">{tecnologia[1]}</p>
@@ -173,7 +179,10 @@ const SkillsComponent = () => {
             <div className="flex flex-col gap-5 mt-3 py-5 mx-3 shadow-2xl rounded-md">
               <h3 className="text-3xl text-center mb-5">COMPLEMENTOS</h3>
               {complementos.map((complemento) => (
-                <div className="flex justify-between items-center gap-4  w-full px-5 py-3 bg-gradient-to-r from-accent2/80 to-transparent">
+                <div
+                  key={Math.random() + Math.random()}
+                  className="flex justify-between items-center gap-4  w-full px-5 py-3 bg-gradient-to-r from-accent2/80 to-transparent"
+                >
                   <div>
                     <p className="font-semibold">{complemento[0]}</p>
                     <p className=" text-sm">{complemento[1]}</p>
@@ -190,7 +199,8 @@ const SkillsComponent = () => {
               <div className="grid grid-cols-2 gap-3">
                 {certificaciones.map((certificacion) => (
                   <a
-					target="_blank"
+                    key={Math.random() + Math.random()}
+                    target="_blank"
                     className="bg-gradient-to-b from-transparent to-secondary/70 rounded-md p-3 flex flex-col justify-center items-center gap-2"
                     href={certificacion[1]}
                   >
