@@ -48,7 +48,7 @@ const ProjectsComponent = () => {
 
   return (
     <>
-      <section className="relative bg-primary-light" id="projects">
+      <section className="relative bg-primary-light pb-8" id="projects">
         <div className="absolute w-full overflow-hidden top-0">
           <img
             src="/wave.svg"
@@ -57,7 +57,7 @@ const ProjectsComponent = () => {
           />
         </div>
         <div className="pt-32  flex flex-col justify-center items-center gap-5 p-5 mx-3 shadow-xl rounded-md">
-          <h3 className="text-primary-dark text-3xl text-center mb-3 shadow-lg rounded-md py-2 px-6">
+          <h3 className="text-primary-dark text-3xl text-center mb-3 py-2 px-2 border-b border-primary-dark">
             EXPERIENCIA
           </h3>
           <p className="text-center font-extralight">
@@ -79,7 +79,7 @@ const ProjectsComponent = () => {
           </p>
         </div>
         <div className="pb-14 pt-10 flex flex-col justify-center items-center gap-5 p-5 mx-3 shadow-xl rounded-md">
-          <h3 className="text-primary-dark text-3xl text-center mb-3 shadow-lg rounded-md py-2 px-6">
+          <h3 className="text-primary-dark text-3xl text-center mb-3 py-2 px-2 border-b border-primary-dark">
             PROYECTOS
           </h3>
           <div className="grid gap-5">
@@ -114,8 +114,8 @@ const ProjectsComponent = () => {
           <ReactModal
             isOpen={!!selectedProject}
             onRequestClose={closeModal}
-            className="outline-none backdrop-blur-md bg-primary-light/90 rounded-lg max-w-lg w-full shadow-2xl mx-5 relative text-center font-extralight flex flex-col gap-5"
-            overlayClassName="outline-none fixed inset-0 bg-black bg-opacity-40 backdrop-blur-md flex items-center justify-center"
+            className="outline-none mt-10 backdrop-blur-md bg-primary-light/90 rounded-lg max-w-lg w-full shadow-2xl mx-5 relative text-center font-extralight flex flex-col gap-5"
+            overlayClassName="outline-none fixed inset-0 bg-black bg-opacity-50 backdrop-blur flex items-center justify-center"
             contentLabel="Project Modal"
           >
             <h3 className="font-extralight text-primary-light absolute text-6xl top-[-100px] left-0 right-0 drop-shadow-xl">
@@ -124,7 +124,7 @@ const ProjectsComponent = () => {
 
             <div>
               <iframe
-                className="w-full rounded-s-md rounded-se-md"
+                className="w-full h-52 rounded-t-md"
                 src={selectedProject.url}
                 title="YouTube video player"
                 allow="autoplay"
@@ -136,7 +136,10 @@ const ProjectsComponent = () => {
             </h3>
             <div className="flex flex-wrap gap-5 px-5">
               {selectedProject.tags.map((tag) => (
-                <div className="relative flex flex-grow">
+                <div
+                  key={Math.random() + Math.random()}
+                  className="relative flex flex-grow"
+                >
                   <p
                     key={tag}
                     className="flex-grow px-2 py-1 rounded-md text-primary-light font-semibold shadow-md "

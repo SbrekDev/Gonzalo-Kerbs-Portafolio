@@ -78,7 +78,7 @@ const SkillsComponent = () => {
   ];
 
   return (
-    <div className="relative bg-primary-dark text-primary-light pt-5 pb-12">
+    <div className="relative bg-primary-dark text-primary-light pt-5 ">
       <section className="profile" id="profile">
         <div className="">
           <div className="">
