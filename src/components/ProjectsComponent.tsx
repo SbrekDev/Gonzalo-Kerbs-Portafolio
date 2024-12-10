@@ -49,9 +49,37 @@ const ProjectsComponent = () => {
   return (
     <>
       <section className="relative bg-primary-light" id="projects">
-        {/* Contenido previo omitido por brevedad */}
+        <div className="absolute w-full overflow-hidden top-0">
+          <img
+            src="/wave.svg"
+            alt="animated waves"
+            className="w-full h-full rotate-180 object-cover"
+          />
+        </div>
+        <div className="pt-32  flex flex-col justify-center items-center gap-5 p-5 mx-3 shadow-xl rounded-md">
+          <h3 className="text-primary-dark text-3xl text-center mb-3 shadow-lg rounded-md py-2 px-6">
+            EXPERIENCIA
+          </h3>
+          <p className="text-center font-extralight">
+            {" "}
+            He trabajado en proyectos que van desde páginas simples hasta
+            aplicaciones complejas con{" "}
+            <strong className="text-accent">
+              bases de datos integradas y sistemas de autenticación de usuarios
+            </strong>
+            .
+          </p>
+          <p className="text-center font-extralight">
+            Mi compromiso con el{" "}
+            <strong className="text-accent">aprendizaje continuo</strong> es
+            clave en mi carrera. Actualmente estoy{" "}
+            <strong className="text-accent">ampliando mis habilidades </strong>
+            estudiando Java y C# para fortalecer aún más mis conocimientos en
+            desarrollo Backend.
+          </p>
+        </div>
         <div className="pb-14 pt-10 flex flex-col justify-center items-center gap-5 p-5 mx-3 shadow-xl rounded-md">
-          <h3 className="text-primary-dark text-3xl text-center mb-3">
+          <h3 className="text-primary-dark text-3xl text-center mb-3 shadow-lg rounded-md py-2 px-6">
             PROYECTOS
           </h3>
           <div className="grid gap-5">
@@ -86,13 +114,14 @@ const ProjectsComponent = () => {
           <ReactModal
             isOpen={!!selectedProject}
             onRequestClose={closeModal}
-            className="outline-none backdrop-blur-md bg-primary-light/90 rounded max-w-lg w-full shadow-2xl mx-5 relative text-center font-extralight flex flex-col gap-5"
+            className="outline-none backdrop-blur-md bg-primary-light/90 rounded-lg max-w-lg w-full shadow-2xl mx-5 relative text-center font-extralight flex flex-col gap-5"
             overlayClassName="outline-none fixed inset-0 bg-black bg-opacity-40 backdrop-blur-md flex items-center justify-center"
             contentLabel="Project Modal"
           >
             <h3 className="font-extralight text-primary-light absolute text-6xl top-[-100px] left-0 right-0 drop-shadow-xl">
               G<span className="font-extrabold text-accent">K</span>
             </h3>
+
             <div>
               <iframe
                 className="w-full rounded-s-md rounded-se-md"
@@ -105,14 +134,23 @@ const ProjectsComponent = () => {
             <h3 className="font-normal text-2xl uppercase">
               {selectedProject.nombre}
             </h3>
-            <div className="flex flex-wrap gap-2 px-5">
+            <div className="flex flex-wrap gap-5 px-5">
               {selectedProject.tags.map((tag) => (
-                <p
-                  key={tag}
-                  className="bg-primary-light px-2 py-1 rounded-md text-accent border border-accent font-semibold shadow-md flex-grow"
-                >
-                  {tag}
-                </p>
+                <div className="relative flex flex-grow">
+                  <p
+                    key={tag}
+                    className="flex-grow px-2 py-1 rounded-md text-primary-light font-semibold shadow-md "
+                  >
+                    {tag}
+                  </p>
+                  <div className="absolute w-full -z-10 overflow-hidden bottom-0">
+                    <img
+                      src="/wave-accent.svg"
+                      alt="animated waves"
+                      className="w-full h-24 object-cover rounded-b-md"
+                    />
+                  </div>
+                </div>
               ))}
             </div>
             <div className="flex justify-center px-5 pb-5 gap-3">
