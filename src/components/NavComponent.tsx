@@ -28,7 +28,7 @@ const NavComponent = () => {
       <div
         className={`${
           navClick ? "" : "hidden lg:flex"
-        } w-screen flex flex-col lg:flex-row justify-center lg:gap-5 xl:gap-8 items-center list-none font-normal lg:text-xl`}
+        } w-screen flex flex-col lg:flex-row justify-center lg:gap-5 xl:gap-8 items-center list-none font-normal`}
       >
         <a
           className="px-9 py-2 lg:hover:bg-secondary lg:hover:text-primary-light hover:cursor-pointer rounded-lg"
