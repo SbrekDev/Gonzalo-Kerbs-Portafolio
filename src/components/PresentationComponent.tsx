@@ -2,10 +2,10 @@ const PresentationComponent = () => {
   return (
     <div className="relative">
       <div
-        className="h-screen w-screen bg-fixed bg-cover bg-center absolute -z-10"
+        className="h-screen w-full bg-fixed bg-cover bg-center absolute -z-10"
         style={{ backgroundImage: 'url("images/background.webp")' }}
       ></div>
-      <div className="w-screen h-screen flex flex-col justify-around" id="home">
+      <div className="w-full h-screen flex flex-col justify-around" id="home">
         <div className="flex flex-col justify-center items-center">
           <div className="relative flex justify-center items-center size-72 mt-10">
             <img
@@ -64,7 +64,7 @@ const PresentationComponent = () => {
           </a>
         </div>
       </div>
-      <div className="absolute w-full -z-10 overflow-hidden bottom-0">
+      <div className="absolute w-full -z-10 overflow-hidden bottom-0 lg:hidden">
         <img
           src="/wave.svg"
           alt="animated waves"

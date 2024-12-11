@@ -22,7 +22,7 @@ const ContactComponent = () => {
             <h4 className="text-primary-dark text-xl text-center mb-3 py-2 border-b border-primary-dark w-48">
               REDES SOCIALES
             </h4>
-            <div className="flex gap-5 text-2xl">
+            <div className="flex gap-5 mt-1 text-2xl text-secondary">
               <a
                 href="https://www.instagram.com/gonzaakerbs"
                 target="_blank"
@@ -54,13 +54,16 @@ const ContactComponent = () => {
             </div>
           </div>
         </div>
-        <footer className="p-5">
+        <footer className="p-5 ">
           <p className="text-center">
             Gonzalo Kerbs - {new Date().getFullYear()}
           </p>
           <p className="text-center text-sm  font-light">
             React | TailwindCSS | TypeScript
           </p>
+          <h3 className="font-extralight text-primary-light drop-shadow-xl text-center text-6xl mt-8">
+            G<span className="font-extrabold text-accent">K</span>
+          </h3>
         </footer>
       </section>
     </>

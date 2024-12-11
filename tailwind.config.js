@@ -15,8 +15,8 @@ export default {
         accent: "#00adb5",
         accent2: "#00afee"
       },
-      dropShadow: {
-        'accent': '#7a30b0'
+      boxShadow: {
+        'accent': '#7a30b0',
       },
     },
   },
