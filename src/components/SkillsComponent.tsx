@@ -123,7 +123,7 @@ const SkillsComponent = () => {
               className="mb-5 flex flex-col justify-center items-center gap-5 p-6 mt-3 py-5 shadow-2xl rounded-md w-full xl:h-96 xl:mt-0"
             >
               <h3 className="text-3xl text-center mb-5">APTITUDES</h3>
-              <div className="flex flex-col gap-6 w-full font-extralight text-xl md:flex-row md:flex-wrap md:justify-center max-w-[650px] lg:grid lg:pl-10 lg:grid-cols-2 xl:grid-cols-2 break-words">
+              <div className="flex flex-col gap-6 w-[90%] font-extralight text-xl md:flex-row md:flex-wrap md:justify-center max-w-[650px] lg:grid lg:pl-10 lg:grid-cols-2 xl:grid-cols-2 break-words">
                 <p
                   data-aos="fade-left"
                   data-aos-duration="800"
@@ -189,15 +189,16 @@ const SkillsComponent = () => {
                   data-aos-duration="300"
                   data-aos-offset="100"
                   key={Math.random() + Math.random()}
-                  className="flex justify-between items-center gap-4  w-full px-5 py-3 bg-gradient-to-r from-accent/90 to-transparent select-none md:transition-all md:hover:scale-95"
                 >
-                  <div>
-                    <p className="font-semibold">{lenguaje[0]}</p>
-                    <p className=" text-sm">{lenguaje[1]}</p>
+                  <div className="flex justify-between items-center gap-4  w-full px-5 py-3 bg-gradient-to-r from-accent/90 to-transparent select-none md:transition-all md:hover:scale-95">
+                    <div>
+                      <p className="font-semibold">{lenguaje[0]}</p>
+                      <p className=" text-sm">{lenguaje[1]}</p>
+                    </div>
+                    <i
+                      className={`devicon-${lenguaje[2]}-plain text-accent text-4xl`}
+                    />
                   </div>
-                  <i
-                    className={`devicon-${lenguaje[2]}-plain text-accent text-4xl`}
-                  />
                 </div>
               ))}
             </div>
@@ -216,15 +217,16 @@ const SkillsComponent = () => {
                   data-aos-duration="300"
                   data-aos-offset="100"
                   key={Math.random() + Math.random()}
-                  className="flex justify-between  items-center gap-4  w-full px-5 py-3 bg-gradient-to-r from-accent/80 to-transparent select-none md:transition-all md:hover:scale-95"
                 >
-                  <div>
-                    <p className="font-semibold">{tecnologia[0]}</p>
-                    <p className=" text-sm">{tecnologia[1]}</p>
+                  <div className="flex justify-between  items-center gap-4  w-full px-5 py-3 bg-gradient-to-r from-accent/80 to-transparent select-none md:transition-all md:hover:scale-95">
+                    <div>
+                      <p className="font-semibold">{tecnologia[0]}</p>
+                      <p className=" text-sm">{tecnologia[1]}</p>
+                    </div>
+                    <i
+                      className={`devicon-${tecnologia[2]}-plain text-accent text-4xl`}
+                    />
                   </div>
-                  <i
-                    className={`devicon-${tecnologia[2]}-plain text-accent text-4xl`}
-                  />
                 </div>
               ))}
             </div>
@@ -244,15 +246,16 @@ const SkillsComponent = () => {
                   data-aos-duration="300"
                   data-aos-offset="100"
                   key={Math.random() + Math.random()}
-                  className="flex justify-between items-center gap-4  w-full px-5 py-3 bg-gradient-to-r from-accent2/80 to-transparent select-none md:transition-all md:hover:scale-95"
                 >
-                  <div>
-                    <p className="font-semibold">{complemento[0]}</p>
-                    <p className=" text-sm">{complemento[1]}</p>
+                  <div className="flex justify-between items-center gap-4  w-full px-5 py-3 bg-gradient-to-r from-accent2/80 to-transparent select-none md:transition-all md:hover:scale-95">
+                    <div>
+                      <p className="font-semibold">{complemento[0]}</p>
+                      <p className=" text-sm">{complemento[1]}</p>
+                    </div>
+                    <i
+                      className={`devicon-${complemento[2]}-plain text-accent2 text-4xl`}
+                    />
                   </div>
-                  <i
-                    className={`devicon-${complemento[2]}-plain text-accent2 text-4xl`}
-                  />
                 </div>
               ))}
             </div>
@@ -265,22 +268,24 @@ const SkillsComponent = () => {
             className="flex flex-col justify-center items-center gap-5 p-3 mt-3  py-5 shadow-2xl rounded-md w-full"
           >
             <h3 className="text-3xl text-center mb-5">CERTIFICACIONES</h3>
-            <div className="grid grid-cols-2 gap-3 xl:grid-cols-3 xl:gap-6">
+            <div className="grid grid-cols-2  gap-3 lg:grid-cols-3 xl:grid-cols-4 lg:gap-6">
               {certificaciones.map((certificacion) => (
-                <a
+                <div
                   data-aos="flip-down"
                   data-aos-duration="600"
-                  
                   key={Math.random() + Math.random()}
-                  target="_blank"
-                  className="bg-gradient-to-b from-transparent to-secondary/70 rounded-md p-3 flex flex-col justify-center items-center gap-2 h-40 md:h-48 md:p-6 md:hover:scale-90 md:transition-all"
-                  href={certificacion[1]}
                 >
-                  <i className="fa-solid fa-graduation-cap text-3xl text-accent md:text-6xl md:mb-5" />
-                  <p className="text-center font-extralight">
-                    {certificacion[0]}
-                  </p>
-                </a>
+                  <a
+                    target="_blank"
+                    className="bg-gradient-to-b from-transparent to-secondary/70 rounded-md p-3 flex flex-col justify-center items-center gap-2 h-40 md:h-48 md:p-6 md:hover:scale-90 md:transition-all"
+                    href={certificacion[1]}
+                  >
+                    <i className="fa-solid fa-graduation-cap text-3xl text-accent md:text-6xl md:mb-5" />
+                    <p className="text-center font-extralight">
+                      {certificacion[0]}
+                    </p>
+                  </a>
+                </div>
               ))}
             </div>
           </div>

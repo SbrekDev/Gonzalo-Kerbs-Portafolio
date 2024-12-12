@@ -33,11 +33,11 @@ const PresentationComponent = () => {
               className="w-56 md:w-72 drop-shadow-lg"
             />
           </div>
-          <div className="flex justify-center flex-col md:mt-10 xl:mt-0 xl:items-start">
+          <div className="flex justify-center flex-col md:mt-10 xl:mt-0 xl:items-start select-none">
             <h1
               data-aos="fade-right"
               data-aos-duration="1500"
-              className="text-6xl font-semibold text-center text-primary-dark drop-shadow-lg xl:text-[6rem]"
+              className="w-96 md:w-full text-6xl font-semibold text-center text-primary-dark drop-shadow-lg xl:text-[6rem]"
             >
               Gonzalo Kerbs
             </h1>
@@ -51,61 +51,67 @@ const PresentationComponent = () => {
           </div>
         </div>
         <div className="flex justify-center gap-4 text-2xl text-primary-light/70 drop-shadow-md md:text-4xl md:gap-8 lg:absolute lg:bottom-10 lg:right-10 lg:z-10">
-          <a
-            data-aos="zoom-in"
-            data-aos-duration="1500"
-            data-aos-offset="0"
-            className="hover:text-accent md:hover:scale-125 md:transition-all "
-            href="https://www.linkedin.com/in/gonzalo-kerbs"
-            target="_blank"
-            aria-label="link linkedin"
-          >
-            <i className="fa-brands fa-linkedin-in" />
-          </a>
-          <a
-            data-aos="zoom-in"
-            data-aos-duration="2000"
-            data-aos-offset="0"
-            className="hover:text-accent md:hover:scale-125 md:duration-200 "
-            href="https://api.whatsapp.com/send?phone=543435031208"
-            target="_blank"
-            aria-label="link whatsapp"
-          >
-            <i className="fa-brands fa-whatsapp" />
-          </a>
-          <a
-            data-aos="zoom-in"
-            data-aos-offset="0"
-            data-aos-duration="2500"
-            className="hover:text-accent md:hover:scale-125 md:duration-200 "
-            href="https://www.instagram.com/gonzaakerbs"
-            target="_blank"
-            aria-label="link instagram"
-          >
-            <i className="fa-brands fa-instagram" />
-          </a>
-          <a
-            data-aos="zoom-in"
-            data-aos-offset="0"
-            data-aos-duration="3000"
-            className="hover:text-accent md:hover:scale-125 md:duration-200 "
-            href="https://twitter.com/GonzaaaKerbs"
-            target="_blank"
-            aria-label="link twitter x"
-          >
-            <i className="fa-brands fa-x-twitter" />
-          </a>
+          <div data-aos="zoom-in" data-aos-duration="1500" data-aos-offset="0">
+            <div className="md:hover:scale-125 md:transition-all">
+              <a
+                className="hover:text-accent md:hover:scale-125 md:transition-all "
+                href="https://www.linkedin.com/in/gonzalo-kerbs"
+                target="_blank"
+                aria-label="link linkedin"
+              >
+                <i className="fa-brands fa-linkedin-in" />
+              </a>
+            </div>
+          </div>
+          <div data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0">
+            <div className="md:hover:scale-125 md:transition-all">
+              <a
+                className="hover:text-accent md:duration-200 "
+                href="https://api.whatsapp.com/send?phone=543435031208"
+                target="_blank"
+                aria-label="link whatsapp"
+              >
+                <i className="fa-brands fa-whatsapp" />
+              </a>
+            </div>
+          </div>
+          <div data-aos="zoom-in" data-aos-duration="2500" data-aos-offset="0">
+            <div className="md:hover:scale-125 md:transition-all">
+              <a
+                className="hover:text-accent md:duration-200 "
+                href="https://www.instagram.com/gonzaakerbs"
+                target="_blank"
+                aria-label="link instagram"
+              >
+                <i className="fa-brands fa-instagram" />
+              </a>
+            </div>
+          </div>
+          <div data-aos="zoom-in" data-aos-duration="3000" data-aos-offset="0">
+            <div className="md:hover:scale-125 md:transition-all">
+              <a
+                className="hover:text-accent md:duration-200 "
+                href="https://twitter.com/GonzaaaKerbs"
+                target="_blank"
+                aria-label="link twitter x"
+              >
+                <i className="fa-brands fa-x-twitter" />
+              </a>
+            </div>
+          </div>
         </div>
-        <div className="flex justify-center relative lg:absolute lg:bottom-10 lg:right-0 lg:left-0">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-offset="0"
+          className="flex justify-center relative lg:absolute lg:bottom-10 lg:right-0 lg:left-0"
+        >
           <a
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-offset="0"
-            className=" hover:scale-150 md:transition-all "
+            className="text-primary-light hover:scale-150 md:transition-all hover:text-accent "
             href="#profile"
             aria-label="siguiente pagina"
           >
-            <i className="fa-solid fa-chevron-down text-4xl text-primary-light drop-shadow-md lg:text-6xl" />
+            <i className="fa-solid fa-chevron-down text-4xl drop-shadow-md lg:text-6xl" />
           </a>
         </div>
       </div>

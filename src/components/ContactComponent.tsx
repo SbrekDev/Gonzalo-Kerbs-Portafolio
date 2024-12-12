@@ -6,7 +6,7 @@ const ContactComponent = () => {
           data-aos="fade-up"
           data-aos-duration="600"
           data-aos-offset="0"
-          className="pb-8 pt-10 flex flex-col justify-center items-center gap-5 px-5 shadow-lg"
+          className="pb-8 flex flex-col justify-center items-center gap-5 px-5 shadow-lg pt-2"
         >
           <h3 className="text-primary-dark text-3xl text-center mb-3 py-2 px-2 border-b border-primary-dark">
             CONTACTO

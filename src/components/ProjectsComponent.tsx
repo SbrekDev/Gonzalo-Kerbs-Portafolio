@@ -15,14 +15,35 @@ const proyectos = [
     tags: ["PHP", "JavaScript", "Sass", "MySql", "MVC"],
     iconos: ["php", "sass", "mysql", "javascript"],
     pathImg: "projectImages/devwebcamp.png",
-    url: "",
+    url: "https://www.youtube.com/embed/T0WwgMe2gvE",
+  },
+  {
+    nombre: "Tienda de Café",
+    tags: [
+      "NextJs",
+      "JavaScript",
+      "TypeScript",
+      "Prisma",
+      "NodeJs",
+      "TailwindCss",
+    ],
+    iconos: ["nextjs", "typescript", "prisma", "tailwindcss"],
+    pathImg: "projectImages/cafenext.png",
+    url: "https://www.youtube.com/embed/hCWKLDcxcZU",
   },
   {
     nombre: "Bienes Raíces Vue",
     tags: ["VueJs", "TailwindCSS", "NodeJs", "Vuetify", "Leaflet"],
-    iconos: ["vuejs", "tailwindcss", "nodejs", "vite"],
+    iconos: ["vuejs", "tailwindcss", "nodejs", "vite", "firebase"],
     pathImg: "projectImages/bnvue.png",
     url: "https://www.youtube.com/embed/-FkjpyIK1Io",
+  },
+  {
+    nombre: "UpTask React",
+    tags: ["React", "TailwindCSS", "NodeJs", "TypeScript"],
+    iconos: ["react", "tailwindcss", "nodejs", "vite", "typescript"],
+    pathImg: "projectImages/upreact.png",
+    url: "https://www.youtube.com/embed/CfgYdUFwriI",
   },
   {
     nombre: "Bienes Raices Node",
@@ -32,6 +53,13 @@ const proyectos = [
     url: "https://www.youtube.com/embed/T6AIFqFGOLY",
   },
   {
+    nombre: "Eccomerce Indumentaria",
+    tags: ["VueJs", "TailwindCSS", "NodeJs", "Vuetify", "Firebase"],
+    iconos: ["vuejs", "tailwindcss", "nodejs", "vite", "firebase"],
+    pathImg: "projectImages/eshopvue.png",
+    url: "https://www.youtube.com/embed/U3TCgOnGQ0o",
+  },
+  {
     nombre: "Bienes Raices PHP",
     tags: ["PHP", "Sass", "MySql", "JavaScript"],
     iconos: ["php", "sass", "mysql", "javascript"],
@@ -39,11 +67,46 @@ const proyectos = [
     url: "https://www.youtube.com/embed/M2VAdUbbNKI",
   },
   {
+    nombre: "Centro de Belleza Vue",
+    tags: ["VueJs", "TailwindCSS", "NodeJs", "Vuetify", "Firebase"],
+    iconos: ["vuejs", "tailwindcss", "nodejs", "vite", "firebase"],
+    pathImg: "projectImages/peluvue.png",
+    url: "https://www.youtube.com/embed/h9hEBgOAP4k",
+  },
+  {
+    nombre: "Peluquería PHP",
+    tags: ["PHP", "Sass", "MySql", "JavaScript"],
+    iconos: ["php", "sass", "mysql", "javascript"],
+    pathImg: "projectImages/peluphp.png",
+    url: "https://www.youtube.com/embed/CxMfUdaYsEQ",
+  },
+  {
     nombre: "Agencia de Viajes",
     tags: ["NodeJs", "Css", "JavaScript", "MySql"],
     iconos: ["nodejs", "css3", "mysql", "JavaScript"],
     pathImg: "projectImages/agviajes.png",
     url: "https://www.youtube.com/embed/RRw6ENd5vUY",
+  },
+  {
+    nombre: "Administrador Clientes",
+    tags: ["Javascript", "React", "TypeScript", "MySql", "TailwindCSS"],
+    iconos: ["react", "tailwindcss", "typescript", "JavaScript", "mysql"],
+    pathImg: "projectImages/admreact.png",
+    url: "https://www.youtube.com/embed/y-SBo2WeRUM",
+  },
+  {
+    nombre: "UpTask PHP",
+    tags: ["PHP", "Sass", "MySql", "JavaScript"],
+    iconos: ["php", "sass", "mysql", "javascript"],
+    pathImg: "projectImages/upphp.png",
+    url: "https://www.youtube.com/embed/Qlc6ZQN2NDA",
+  },
+  {
+    nombre: "Planificador de Gastos",
+    tags: ["Javascript", "React Native", "TypeScript"],
+    iconos: ["react", "typescript", "JavaScript"],
+    pathImg: "projectImages/native.png",
+    url: "https://www.youtube.com/embed/l1kR361brKo",
   },
   {
     nombre: "Proyectos Varios",
@@ -146,38 +209,43 @@ const ProjectsComponent = () => {
           className="pb-14 pt-10 flex flex-col justify-center items-center gap-5 p-5 shadow-lg rounded-md"
         >
           <h3 className="text-primary-dark text-3xl text-center mb-3 py-2 px-2 border-b border-primary-dark">
-            PROYECTOS
+            MI TRABAJO
           </h3>
           <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
             {proyectos.map((proyecto) => (
               <div
                 data-aos="flip-left"
                 data-aos-duration="600"
-                data-aos-offset="200"
+                data-aos-offset="0"
                 key={proyecto.nombre}
-                className="md:hover:scale-90 md:transition-all md:hover:shadow-2xl md:hover:bg-accent/80 hover:cursor-pointer"
               >
-                <article>
-                  <div
-                    onClick={() => openModal(proyecto)}
-                    className="border border-accent shadow-lg text-center flex flex-col"
-                  >
-                    <div className="flex flex-col gap-2 pb-2">
-                      <div>
-                        <img src={proyecto.pathImg} alt={proyecto.nombre} />
-                      </div>
-                      <h3>{proyecto.nombre}</h3>
-                      <div className="flex gap-2 justify-center">
-                        {proyecto.iconos.map((icon) => (
-                          <i
-                            key={icon}
-                            className={`devicon-${icon}-plain text-primary-dark text-xl`}
+                <div className="md:hover:scale-90 md:transition-all md:hover:shadow-2xl md:hover:bg-accent/80 hover:cursor-pointer">
+                  <article>
+                    <div
+                      onClick={() => openModal(proyecto)}
+                      className="border border-accent shadow-lg text-center flex flex-col"
+                    >
+                      <div className="flex flex-col gap-2 pb-2">
+                        <div className="h-40">
+                          <img
+                            className="w-full h-full object-cover"
+                            src={proyecto.pathImg}
+                            alt={proyecto.nombre}
                           />
-                        ))}
+                        </div>
+                        <h3>{proyecto.nombre}</h3>
+                        <div className="flex gap-2 justify-center">
+                          {proyecto.iconos.map((icon) => (
+                            <i
+                              key={icon}
+                              className={`devicon-${icon}-plain text-primary-dark text-xl`}
+                            />
+                          ))}
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </article>
+                  </article>
+                </div>
               </div>
             ))}
           </div>
