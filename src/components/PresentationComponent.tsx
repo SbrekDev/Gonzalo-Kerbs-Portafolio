@@ -37,7 +37,7 @@ const PresentationComponent = () => {
             <h1
               data-aos="fade-right"
               data-aos-duration="1500"
-              className="w-96 md:w-full text-6xl font-semibold text-center text-primary-dark drop-shadow-lg xl:text-[6rem]"
+              className="w-72 md:w-full text-6xl font-semibold text-center text-primary-dark drop-shadow-lg xl:text-[6rem]"
             >
               Gonzalo Kerbs
             </h1>

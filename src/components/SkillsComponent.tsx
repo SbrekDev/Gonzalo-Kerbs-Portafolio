@@ -123,9 +123,9 @@ const SkillsComponent = () => {
               className="mb-5 flex flex-col justify-center items-center gap-5 p-6 mt-3 py-5 shadow-2xl rounded-md w-full xl:h-96 xl:mt-0"
             >
               <h3 className="text-3xl text-center mb-5">APTITUDES</h3>
-              <div className="flex flex-col gap-6 w-[90%] font-extralight text-xl md:flex-row md:flex-wrap md:justify-center max-w-[650px] lg:grid lg:pl-10 lg:grid-cols-2 xl:grid-cols-2 break-words">
+              <div className="flex flex-col gap-6 w-full font-extralight text-xl md:flex-row md:flex-wrap md:justify-center max-w-[650px] lg:grid lg:pl-10 lg:grid-cols-2 xl:grid-cols-2 break-words">
                 <p
-                  data-aos="fade-left"
+                  data-aos="fade-up"
                   data-aos-duration="800"
                   data-aos-offset="100"
                 >
@@ -133,7 +133,7 @@ const SkillsComponent = () => {
                   Disciplina
                 </p>
                 <p
-                  data-aos="fade-left"
+                  data-aos="fade-up"
                   data-aos-duration="900"
                   data-aos-offset="100"
                 >
@@ -141,7 +141,7 @@ const SkillsComponent = () => {
                   Actitud Positiva
                 </p>
                 <p
-                  data-aos="fade-left"
+                  data-aos="fade-up"
                   data-aos-duration="1000"
                   data-aos-offset="100"
                 >
@@ -149,7 +149,7 @@ const SkillsComponent = () => {
                   Aprendizaje Continuo
                 </p>
                 <p
-                  data-aos="fade-left"
+                  data-aos="fade-up"
                   data-aos-duration="1100"
                   data-aos-offset="100"
                 >
@@ -157,7 +157,7 @@ const SkillsComponent = () => {
                   Adaptabilidad
                 </p>
                 <p
-                  data-aos="fade-left"
+                  data-aos="fade-up"
                   data-aos-duration="1200"
                   data-aos-offset="100"
                 >
@@ -165,7 +165,7 @@ const SkillsComponent = () => {
                   Disposición Constante
                 </p>
                 <p
-                  data-aos="fade-left"
+                  data-aos="fade-up"
                   data-aos-duration="1300"
                   data-aos-offset="100"
                 >
@@ -265,7 +265,7 @@ const SkillsComponent = () => {
             data-aos="fade-up"
             data-aos-duration="600"
             data-aos-offset="0"
-            className="flex flex-col justify-center items-center gap-5 p-3 mt-3  py-5 shadow-2xl rounded-md w-full"
+            className="flex flex-col justify-center items-center gap-5 p-3 mt-3  py-5 shadow-lg rounded-md w-full"
           >
             <h3 className="text-3xl text-center mb-5">CERTIFICACIONES</h3>
             <div className="grid grid-cols-2  gap-3 lg:grid-cols-3 xl:grid-cols-4 lg:gap-6">
