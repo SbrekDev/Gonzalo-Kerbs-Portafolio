@@ -18,6 +18,9 @@ export default {
       boxShadow: {
         'accent': '#7a30b0',
       },
+      screens: {
+      xl: '1350px', // O define un nuevo breakpoint aquí si es necesario.
+    },
     },
   },
   plugins: [],

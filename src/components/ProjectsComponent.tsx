@@ -87,7 +87,7 @@ const ProjectsComponent = () => {
   return (
     <>
       <section
-        className="relative bg-primary-light pb-8 flex flex-col items-center"
+        className="relative bg-primary-light pb-8 flex flex-col items-center py-5 px-3 md:px-12 lg:px-44"
         id="projects"
       >
         <div className="absolute w-full overflow-hidden top-0">
@@ -97,35 +97,63 @@ const ProjectsComponent = () => {
             className="w-full h-full rotate-180 object-cover md:hidden"
           />
         </div>
-        <div className="pt-32 flex flex-col justify-center items-center gap-5 p-5 mx-3 shadow-xl rounded-md md:gap-3 md:pt-16 md:pb-8 max-w-[650px]">
-          <h3 className="text-primary-dark text-3xl text-center mb-3 py-2 px-2 border-b border-primary-dark">
-            EXPERIENCIA
-          </h3>
-          <p className="text-center font-extralight max-w-xl">
-            {" "}
-            He trabajado en proyectos que van desde páginas simples hasta
-            aplicaciones complejas con{" "}
-            <strong className="text-accent">
-              bases de datos integradas y sistemas de autenticación de usuarios
-            </strong>
-            .
-          </p>
-          <p className="text-center font-extralight max-w-xl">
-            Mi compromiso con el{" "}
-            <strong className="text-accent">aprendizaje continuo</strong> es
-            clave en mi carrera. Actualmente estoy{" "}
-            <strong className="text-accent">ampliando mis habilidades </strong>
-            estudiando Java y C# para fortalecer aún más mis conocimientos en
-            desarrollo Backend.
-          </p>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="600"
+          data-aos-offset="0"
+          className="flex items-center justify-center pt-32 p-5 shadow-xl rounded-md w-full md:gap-3 md:pt-16 md:pb-10 lg:pb-12 xl:gap-24"
+        >
+          <div className="hidden xl:block">
+            <img
+              data-aos="zoom-in"
+              data-aos-duration="600"
+              data-aos-offset="0"
+              src="images/profile__img2.webp"
+              alt="imagen gonzalo kerbs"
+              className="w-60 drop-shadow-lg"
+            />
+          </div>
+          <div className="flex flex-col justify-center items-center gap-5">
+            <h3 className="text-primary-dark text-3xl text-center mb-3 py-2 px-2 border-b border-primary-dark">
+              EXPERIENCIA
+            </h3>
+            <p className="text-center font-extralight max-w-xl">
+              {" "}
+              He trabajado en proyectos que van desde páginas simples hasta
+              aplicaciones complejas con{" "}
+              <strong className="text-accent">
+                bases de datos integradas y sistemas de autenticación de
+                usuarios
+              </strong>
+              .
+            </p>
+            <p className="text-center font-extralight max-w-xl">
+              Mi compromiso con el{" "}
+              <strong className="text-accent">aprendizaje continuo</strong> es
+              clave en mi carrera. Actualmente estoy{" "}
+              <strong className="text-accent">
+                ampliando mis habilidades{" "}
+              </strong>
+              estudiando Java y C# para fortalecer aún más mis conocimientos en
+              desarrollo Backend.
+            </p>
+          </div>
         </div>
-        <div className="pb-14 pt-10 flex flex-col justify-center items-center gap-5 p-5 mx-3 shadow-lg rounded-md">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="600"
+          data-aos-offset="0"
+          className="pb-14 pt-10 flex flex-col justify-center items-center gap-5 p-5 shadow-lg rounded-md"
+        >
           <h3 className="text-primary-dark text-3xl text-center mb-3 py-2 px-2 border-b border-primary-dark">
             PROYECTOS
           </h3>
-          <div className="grid gap-5 md:grid-cols-2">
+          <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
             {proyectos.map((proyecto) => (
               <div
+                data-aos="flip-left"
+                data-aos-duration="600"
+                data-aos-offset="200"
                 key={proyecto.nombre}
                 className="md:hover:scale-90 md:transition-all md:hover:shadow-2xl md:hover:bg-accent/80 hover:cursor-pointer"
               >
