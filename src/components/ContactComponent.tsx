@@ -24,44 +24,50 @@ const ContactComponent = () => {
             </h4>
             <div className="flex gap-5 mt-1 text-2xl text-secondary">
               <a
+                href="https://www.linkedin.com/in/gonzalo-kerbs"
+                target="_blank"
+                aria-label="link linkedin"
+                className="md:hover:scale-125 md:hover:text-accent transition-all md:hover:drop-shadow-md"
+              >
+                <i className="fa-brands fa-linkedin-in" />
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=543435031208"
+                target="_blank"
+                aria-label="link whatsapp"
+                className="md:hover:scale-125 md:hover:text-accent transition-all md:hover:drop-shadow-md"
+              >
+                <i className="fa-brands fa-whatsapp" />
+              </a>
+              <a
                 href="https://www.instagram.com/gonzaakerbs"
                 target="_blank"
                 aria-label="link instagram"
+                className="md:hover:scale-125 md:hover:text-accent transition-all md:hover:drop-shadow-md"
               >
                 <i className="fa-brands fa-instagram" />
-              </a>
-              <a
-                href="https://discord.gg/jE8mfWE"
-                target="_blank"
-                aria-label="link discord"
-              >
-                <i className="fa-brands fa-discord" />
               </a>
               <a
                 href="https://twitter.com/GonzaaaKerbs"
                 target="_blank"
                 aria-label="link twitter x"
+                className="md:hover:scale-125 md:hover:text-accent transition-all md:hover:drop-shadow-md"
               >
                 <i className="fa-brands fa-x-twitter" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/gonzalo-kerbs"
-                target="_blank"
-                aria-label="link linkedin"
-              >
-                <i className="fa-brands fa-linkedin-in" />
               </a>
             </div>
           </div>
         </div>
-        <footer className="p-5 ">
-          <p className="text-center">
-            Gonzalo Kerbs - {new Date().getFullYear()}
-          </p>
-          <p className="text-center text-sm  font-light">
-            React | TailwindCSS | TypeScript
-          </p>
-          <h3 className="font-extralight text-primary-light drop-shadow-xl text-center text-6xl mt-8">
+        <footer className="p-5 flex justify-center md:justify-between md:items-center md:px-20">
+          <div>
+            <p className="text-center">
+              Gonzalo Kerbs - {new Date().getFullYear()}
+            </p>
+            <p className="text-center text-sm  font-light">
+              React | TailwindCSS | TypeScript
+            </p>
+          </div>
+          <h3 className="font-extralight text-primary-dark drop-shadow-xl text-center text-6xl mt-3 hidden md:block">
             G<span className="font-extrabold text-accent">K</span>
           </h3>
         </footer>

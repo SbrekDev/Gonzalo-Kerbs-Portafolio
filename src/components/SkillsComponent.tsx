@@ -44,23 +44,23 @@ const SkillsComponent = () => {
       "https://coursera.org/share/7a64b1cccc0b596857464f41464f02f8",
     ],
     [
-      "HTML5 | CSS3 | JS | PHP | MYSQL",
+      "HTML5, CSS3, JS, PHP, MYSQL",
       "https://www.udemy.com/certificate/UC-7e77a4fb-ce0a-4c64-a4fc-b8049cea5a6a/",
     ],
     [
-      "JavaScript Moderno | Testing",
+      "JavaScript Moderno, Testing",
       "https://www.udemy.com/certificate/UC-158e8998-f260-4841-a727-9fefe8220689/",
     ],
     [
-      "Node JS | Express | MVC",
+      "Node JS, Express, MVC",
       "https://www.udemy.com/certificate/UC-20ae2b2d-5fb3-4c3a-b782-105d8efc02ac/",
     ],
     [
-      "React | TypeScript",
+      "React, TypeScript",
       "https://www.udemy.com/certificate/UC-4c4e6275-86fc-432a-bc50-763eeb54e1ce/",
     ],
     [
-      "React | NextJS | MongoDB | GraphQL",
+      "React, NextJS, MongoDB, GraphQL",
       "https://www.udemy.com/certificate/UC-95b282e0-2860-4996-9007-531930751444/",
     ],
     [
@@ -68,7 +68,7 @@ const SkillsComponent = () => {
       "https://www.udemy.com/certificate/UC-9ac6cb32-22e6-46b9-8dac-9b5f8b90f595/",
     ],
     [
-      "Vue | Firebase | MongoDB",
+      "Vue, Firebase, MongoDB",
       "https://www.udemy.com/certificate/UC-52a94e0d-d57c-49f1-80d7-a1054df74fdf/",
     ],
     [
@@ -86,16 +86,16 @@ const SkillsComponent = () => {
               <div className="w-96 hidden">
                 <img src="src/images/profile__img2.webp" alt="" />
               </div>
-              <div className="flex flex-col justify-center items-center gap-5 p-5 mx-3 shadow-2xl rounded-md">
+              <div className="w-full flex flex-col justify-center items-center gap-5 p-5 mx-3 shadow-2xl rounded-md md:gap-3">
                 <h3 className="text-3xl text-center mb-3">PRESENTACIÓN</h3>
-                <p className="text-center font-extralight">
+                <p className="text-center font-extralight max-w-xl">
                   Desarrollador Fullstack autodidacta, apasionado por la{" "}
                   <strong className="text-accent">
                     informática y el diseño
                   </strong>
                   . Proveniente de Argentina.
                 </p>
-                <p className="text-center font-extralight">
+                <p className="text-center font-extralight max-w-xl">
                   Llevo dos años especializándome en el área del Front-end y
                   Back-end, aprendiendo{" "}
                   <strong className="text-accent">nuevos recursos</strong> a
@@ -104,7 +104,7 @@ const SkillsComponent = () => {
                   de mis servicios.
                 </p>
                 <a
-                  className="text-center bg-accent px-5 py-3 rounded-md shadow-md hover:bg-secondary hover:text-accent"
+                  className="text-center bg-accent px-5 py-3 rounded-md shadow-md hover:bg-secondary hover:text-accent md:hover:scale-110 md:transition-all"
                   href="/cv/CV - Gonzalo Kerbs.pdf"
                   download="CV - Gonzalo Kerbs"
                 >
@@ -114,7 +114,7 @@ const SkillsComponent = () => {
             </div>
             <div className="mb-5 flex flex-col justify-center items-center gap-5 p-6 mt-3  py-5 mx-3 shadow-2xl rounded-md">
               <h3 className="text-3xl text-center mb-5">APTITUDES</h3>
-              <div className="flex flex-col gap-6 w-full font-extralight text-xl">
+              <div className="flex flex-col gap-6 w-full font-extralight text-xl md:flex-row md:flex-wrap md:justify-center md:max-w-2xl">
                 <p>
                   <strong className="text-accent accent-shadow mr-2">⬤</strong>
                   Disciplina
@@ -143,55 +143,61 @@ const SkillsComponent = () => {
             </div>
             <div className="flex flex-col gap-5 mt-3 py-5 mx-3 shadow-2xl rounded-md">
               <h3 className="text-3xl text-center mb-5">LENGUAJES</h3>
-              {lenguajes.map((lenguaje) => (
-                <div
-                  key={Math.random() + Math.random()}
-                  className="flex justify-between items-center gap-4  w-full px-5 py-3 bg-gradient-to-r from-accent/90 to-transparent"
-                >
-                  <div>
-                    <p className="font-semibold">{lenguaje[0]}</p>
-                    <p className=" text-sm">{lenguaje[1]}</p>
+              <div className="grid gap-4 md:grid-cols-2 md:px-12">
+                {lenguajes.map((lenguaje) => (
+                  <div
+                    key={Math.random() + Math.random()}
+                    className="flex justify-between items-center gap-4  w-full px-5 py-3 bg-gradient-to-r from-accent/90 to-transparent select-none md:transition-all md:hover:scale-95"
+                  >
+                    <div>
+                      <p className="font-semibold">{lenguaje[0]}</p>
+                      <p className=" text-sm">{lenguaje[1]}</p>
+                    </div>
+                    <i
+                      className={`devicon-${lenguaje[2]}-plain text-accent text-4xl`}
+                    />
                   </div>
-                  <i
-                    className={`devicon-${lenguaje[2]}-plain text-accent text-4xl`}
-                  />
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
             <div className="flex flex-col gap-5 mt-3 py-5 mx-3 shadow-2xl rounded-md">
               <h3 className="text-3xl text-center mb-5">TECNOLOGÍAS</h3>
-              {tecnologias.map((tecnologia) => (
-                <div
-                  key={Math.random() + Math.random()}
-                  className="flex justify-between items-center gap-4  w-full px-5 py-3 bg-gradient-to-r from-accent/80 to-transparent"
-                >
-                  <div>
-                    <p className="font-semibold">{tecnologia[0]}</p>
-                    <p className=" text-sm">{tecnologia[1]}</p>
+              <div className="grid md:grid-cols-2 gap-4 md:px-12">
+                {tecnologias.map((tecnologia) => (
+                  <div
+                    key={Math.random() + Math.random()}
+                    className="flex justify-between  items-center gap-4  w-full px-5 py-3 bg-gradient-to-r from-accent/80 to-transparent select-none md:transition-all md:hover:scale-95"
+                  >
+                    <div>
+                      <p className="font-semibold">{tecnologia[0]}</p>
+                      <p className=" text-sm">{tecnologia[1]}</p>
+                    </div>
+                    <i
+                      className={`devicon-${tecnologia[2]}-plain text-accent text-4xl`}
+                    />
                   </div>
-                  <i
-                    className={`devicon-${tecnologia[2]}-plain text-accent text-4xl`}
-                  />
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
 
             <div className="flex flex-col gap-5 mt-3 py-5 mx-3 shadow-2xl rounded-md">
               <h3 className="text-3xl text-center mb-5">COMPLEMENTOS</h3>
-              {complementos.map((complemento) => (
-                <div
-                  key={Math.random() + Math.random()}
-                  className="flex justify-between items-center gap-4  w-full px-5 py-3 bg-gradient-to-r from-accent2/80 to-transparent"
-                >
-                  <div>
-                    <p className="font-semibold">{complemento[0]}</p>
-                    <p className=" text-sm">{complemento[1]}</p>
+              <div className="grid md:grid-cols-2 gap-4 md:px-12">
+                {complementos.map((complemento) => (
+                  <div
+                    key={Math.random() + Math.random()}
+                    className="flex justify-between items-center gap-4  w-full px-5 py-3 bg-gradient-to-r from-accent2/80 to-transparent select-none md:transition-all md:hover:scale-95"
+                  >
+                    <div>
+                      <p className="font-semibold">{complemento[0]}</p>
+                      <p className=" text-sm">{complemento[1]}</p>
+                    </div>
+                    <i
+                      className={`devicon-${complemento[2]}-plain text-accent2 text-4xl`}
+                    />
                   </div>
-                  <i
-                    className={`devicon-${complemento[2]}-plain text-accent2 text-4xl`}
-                  />
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
 
             <div className="flex flex-col justify-center items-center gap-5 p-6 mt-3  py-5 shadow-2xl rounded-md">
@@ -201,10 +207,10 @@ const SkillsComponent = () => {
                   <a
                     key={Math.random() + Math.random()}
                     target="_blank"
-                    className="bg-gradient-to-b from-transparent to-secondary/70 rounded-md p-3 flex flex-col justify-center items-center gap-2"
+                    className="bg-gradient-to-b from-transparent to-secondary/70 rounded-md p-3 flex flex-col justify-center items-center gap-2 h-40 md:h-48 md:p-6 md:hover:scale-90 md:transition-all"
                     href={certificacion[1]}
                   >
-                    <i className="fa-solid fa-graduation-cap text-3xl text-accent" />
+                    <i className="fa-solid fa-graduation-cap text-3xl text-accent md:text-6xl md:mb-5" />
                     <p className="text-center font-extralight">
                       {certificacion[0]}
                     </p>

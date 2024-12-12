@@ -12,45 +12,45 @@ const NavComponent = () => {
     <nav
       className={`${
         navClick ? "h-56 z-50" : "h-12"
-      } w-full lg:h-20 lg:w-full absolute lg:sticky top-0 flex flex-col lg:flex-row lg:justify-center lg:items-center bg-primary-dark/95 text-primary-light shadow-md z-50 lg:bg-primary-dark/95 lg:text-primary-light lg:shadow-xl`}
+      } w-full md:h-16 md:w-full absolute top-0 flex flex-col md:flex-row md:justify-center md:items-center bg-primary-dark/95 text-primary-light shadow-md z-50 md:bg-primary-dark/85 md:text-primary-light md:shadow-xl`}
     >
       <div className='flex justify-between items-center px-5'>
-        <h3 className="lg:hidden font-extralight text-primary-light">
+        <h3 className="md:hidden font-extralight text-primary-light">
           G<span className='font-extrabold text-accent'>K</span>
         </h3>
         <button
           onClick={() => desplegarNav()}
-          className={`w-full h-12 flex justify-end items-center lg:hidden`}
+          className={`w-full h-12 flex justify-end items-center md:hidden`}
         >
           <i className={`fa-solid fa-bars text-primary-light text-2xl`} />
         </button>
       </div>
       <div
         className={`${
-          navClick ? "" : "hidden lg:flex"
-        } w-screen flex flex-col lg:flex-row justify-center lg:gap-5 xl:gap-8 items-center list-none font-normal`}
+          navClick ? "" : "hidden md:flex"
+        } w-screen flex flex-col md:flex-row justify-center md:gap-5 lg:gap-8 items-center list-none font-normal`}
       >
         <a
-          className="px-9 py-2 lg:hover:bg-secondary lg:hover:text-primary-light hover:cursor-pointer rounded-lg"
+          className="px-9 py-2 md:hover:bg-primary-light md:hover:transition-all md:hover:text-primary-dark hover:cursor-pointer rounded-lg"
           href="#home"
         >
           Inicio
         </a>
 
         <a
-          className="px-9 py-2 lg:hover:bg-secondary lg:hover:text-primary-light hover:cursor-pointer rounded-lg"
+          className="px-9 py-2 md:hover:bg-primary-light md:hover:transition-all md:hover:text-primary-dark hover:cursor-pointer rounded-lg"
           href="#profile"
         >
           Perfil
         </a>
         <a
-          className="px-9 py-2 lg:hover:bg-secondary lg:hover:text-primary-light hover:cursor-pointer rounded-lg"
+          className="px-9 py-2 md:hover:bg-primary-light md:hover:transition-all md:hover:text-primary-dark hover:cursor-pointer rounded-lg"
           href="#projects"
         >
           Proyectos
         </a>
         <a
-          className="px-9 py-2 lg:hover:bg-secondary lg:hover:text-primary-light hover:cursor-pointer rounded-lg"
+          className="px-9 py-2 md:hover:bg-primary-light md:hover:transition-all md:hover:text-primary-dark hover:cursor-pointer rounded-lg"
           href="#contact"
         >
           Contacto

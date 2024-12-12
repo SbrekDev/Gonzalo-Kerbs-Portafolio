@@ -86,19 +86,22 @@ const ProjectsComponent = () => {
 
   return (
     <>
-      <section className="relative bg-primary-light pb-8" id="projects">
+      <section
+        className="relative bg-primary-light pb-8 flex flex-col items-center"
+        id="projects"
+      >
         <div className="absolute w-full overflow-hidden top-0">
           <img
             src="/wave.svg"
             alt="animated waves"
-            className="w-full h-full rotate-180 object-cover"
+            className="w-full h-full rotate-180 object-cover md:hidden"
           />
         </div>
-        <div className="pt-32  flex flex-col justify-center items-center gap-5 p-5 mx-3 shadow-xl rounded-md">
+        <div className="pt-32 flex flex-col justify-center items-center gap-5 p-5 mx-3 shadow-xl rounded-md md:gap-3 md:pt-16 md:pb-8 max-w-[650px]">
           <h3 className="text-primary-dark text-3xl text-center mb-3 py-2 px-2 border-b border-primary-dark">
             EXPERIENCIA
           </h3>
-          <p className="text-center font-extralight">
+          <p className="text-center font-extralight max-w-xl">
             {" "}
             He trabajado en proyectos que van desde páginas simples hasta
             aplicaciones complejas con{" "}
@@ -107,7 +110,7 @@ const ProjectsComponent = () => {
             </strong>
             .
           </p>
-          <p className="text-center font-extralight">
+          <p className="text-center font-extralight max-w-xl">
             Mi compromiso con el{" "}
             <strong className="text-accent">aprendizaje continuo</strong> es
             clave en mi carrera. Actualmente estoy{" "}
@@ -120,9 +123,12 @@ const ProjectsComponent = () => {
           <h3 className="text-primary-dark text-3xl text-center mb-3 py-2 px-2 border-b border-primary-dark">
             PROYECTOS
           </h3>
-          <div className="grid gap-5">
+          <div className="grid gap-5 md:grid-cols-2">
             {proyectos.map((proyecto) => (
-              <div key={proyecto.nombre}>
+              <div
+                key={proyecto.nombre}
+                className="md:hover:scale-90 md:transition-all md:hover:shadow-2xl md:hover:bg-accent/80 hover:cursor-pointer"
+              >
                 <article>
                   <div
                     onClick={() => openModal(proyecto)}
@@ -169,46 +175,47 @@ const ProjectsComponent = () => {
                 allowFullScreen
               ></iframe>
             </div>
-            <h3 className="font-normal text-2xl uppercase">
-              {selectedProject.nombre}
-            </h3>
-            <div className="flex flex-wrap gap-5 px-5">
-              {selectedProject.tags.map((tag) => (
-                <div
-                  key={Math.random() + Math.random()}
-                  className="relative flex flex-grow"
-                >
-                  <p
-                    key={tag}
-                    className="flex-grow px-2 py-1 rounded-md text-primary-light font-semibold shadow-md "
+            <div className="flex flex-col items-center gap-6 w-full">
+              <h3 className="font-normal text-2xl uppercase">
+                {selectedProject.nombre}
+              </h3>
+              <div className="flex flex-wrap gap-5 px-5 max-w-[400px]">
+                {selectedProject.tags.map((tag) => (
+                  <div
+                    key={Math.random() + Math.random()}
+                    className="relative flex flex-grow "
                   >
-                    {tag}
-                  </p>
-                  <div className="absolute w-full -z-10 overflow-hidden bottom-0">
-                    <img
-                      
-                      src="/wave-accent.svg"
-                      alt="animated waves"
-                      className="w-full h-24 object-cover rounded-b-md"
-                    />
+                    <p
+                      key={tag}
+                      className="flex-grow px-2 py-1 rounded-md text-primary-light font-semibold shadow-md"
+                    >
+                      {tag}
+                    </p>
+                    <div className="absolute w-full -z-10 overflow-hidden bottom-0">
+                      <img
+                        src="/wave-accent.svg"
+                        alt="animated waves"
+                        className="w-full h-24 object-cover rounded-b-md"
+                      />
+                    </div>
                   </div>
-                </div>
-              ))}
-            </div>
-            <div className="flex justify-center px-5 pb-5 gap-3">
-              <a
-                href={selectedProject.url}
-                target="_blank"
-                className="py-2 w-full bg-red-600 text-primary-light font-medium flex justify-center items-center gap-2 shadow-md"
-              >
-                ver en Youtube <i className="fa-brands fa-youtube"></i>
-              </a>
-              <button
-                className="py-2 w-1/4 bg-secondary text-primary-light font-medium"
-                onClick={closeModal}
-              >
-                X
-              </button>
+                ))}
+              </div>
+              <div className="flex justify-center px-5 pb-5 gap-3 w-full">
+                <a
+                  href={selectedProject.url}
+                  target="_blank"
+                  className="py-2 w-full bg-red-600 text-primary-light font-medium flex justify-center items-center gap-2 shadow-md rounded-md"
+                >
+                  ver en Youtube <i className="fa-brands fa-youtube"></i>
+                </a>
+                <button
+                  className="py-2 w-1/4 bg-secondary text-primary-light font-medium rounded-md"
+                  onClick={closeModal}
+                >
+                  X
+                </button>
+              </div>
             </div>
           </ReactModal>
         )}
