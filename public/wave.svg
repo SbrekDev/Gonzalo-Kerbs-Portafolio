@@ -13,7 +13,7 @@
       <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="5s" calcMode="spline" values="0 230;-140 200;0 230" keyTimes="0; .4; 1" keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0" repeatCount="indefinite"/>
     </use>
   </g>
-  <g transform="translate(0,100)">
+  <g transform="translate(0,50)">
     <use xlink:href="#wave" opacity="1" >
       <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="3s" calcMode="spline" values="0 230;-140 200;0 230" keyTimes="0; .4; 1" keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0" repeatCount="indefinite"/>
     </use>

@@ -150,21 +150,21 @@ const ProjectsComponent = () => {
   return (
     <>
       <section
-        className="relative bg-primary-light pb-8 flex flex-col items-center py-5 px-3 md:px-12 lg:px-44"
+        className="relative bg-primary-light pb-8 flex flex-col items-center  px-3 md:pt-14 md:px-12 lg:pt-24 lg:px-44 xl:pt-32"
         id="projects"
       >
-        <div className="absolute w-full overflow-hidden top-0">
+        <div className="absolute w-full overflow-hidden top-0 md:top-[-100px] lg:top-[-100px] xl:top-[-300px]">
           <img
             src="/wave.svg"
             alt="animated waves"
-            className="w-full h-full rotate-180 object-cover md:hidden"
+            className="w-full h-full object-cover rotate-180"
           />
         </div>
         <div
           data-aos="fade-up"
           data-aos-duration="600"
           data-aos-offset="0"
-          className="flex items-center justify-center pt-32 p-5 shadow-xl rounded-md w-full md:gap-3 md:pt-16 md:pb-10 lg:pb-12 xl:gap-24"
+          className="flex items-center bg-primary-light justify-center  p-5 shadow-xl rounded-md w-full md:gap-3 md:pt-16 md:pb-10 lg:pb-12 xl:gap-24 z-30"
         >
           <div className="hidden xl:block">
             <img
@@ -176,7 +176,7 @@ const ProjectsComponent = () => {
               className="w-60 drop-shadow-lg"
             />
           </div>
-          <div className="flex flex-col justify-center items-center gap-5">
+          <div className="flex flex-col justify-center items-center gap-5 px-6 w-full">
             <h3 className="text-primary-dark text-3xl text-center mb-3 py-2 px-2 border-b border-primary-dark">
               EXPERIENCIA
             </h3>
@@ -206,12 +206,12 @@ const ProjectsComponent = () => {
           data-aos="fade-up"
           data-aos-duration="600"
           data-aos-offset="0"
-          className="pb-14 pt-10 flex flex-col justify-center items-center gap-5 p-5 shadow-lg rounded-md"
+          className="pb-14 pt-10 flex flex-col justify-center items-center gap-5 md:p-5 shadow-lg rounded-md w-full"
         >
           <h3 className="text-primary-dark text-3xl text-center mb-3 py-2 px-2 border-b border-primary-dark">
             MI TRABAJO
           </h3>
-          <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+          <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3 w-full">
             {proyectos.map((proyecto) => (
               <div
                 data-aos="flip-left"
@@ -223,10 +223,10 @@ const ProjectsComponent = () => {
                   <article>
                     <div
                       onClick={() => openModal(proyecto)}
-                      className="border border-accent shadow-lg text-center flex flex-col"
+                      className="border border-accent shadow-lg text-center flex flex-col h-80"
                     >
                       <div className="flex flex-col gap-2 pb-2">
-                        <div className="h-40">
+                        <div className="h-60">
                           <img
                             className="w-full h-full object-cover"
                             src={proyecto.pathImg}

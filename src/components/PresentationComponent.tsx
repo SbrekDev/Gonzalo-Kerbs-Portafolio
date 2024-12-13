@@ -18,7 +18,7 @@ const PresentationComponent = () => {
         className="w-full h-screen flex flex-col justify-around xl:justify-center"
         id="home"
       >
-        <div className="relative flex flex-col justify-center items-center mt-10 md:mt-24 xl:flex-row xl:gap-20">
+        <div className="relative flex flex-col justify-center items-center mt-10 md:mt-24 xl:mt-0 xl:flex-row xl:gap-20">
           <div className="relative flex justify-center items-center size-72 ">
             <img
               src="/circle.svg"
@@ -115,14 +115,14 @@ const PresentationComponent = () => {
           </a>
         </div>
       </div>
-      <div className="absolute w-full -z-10 overflow-hidden bottom-0 md:hidden">
+      <div className="absolute w-full -z-10 overflow-hidden bottom-0 md:bottom-[-100px] lg:bottom-[-200px] xl:bottom-[-350px]">
         <img
           src="/wave.svg"
           alt="animated waves"
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="hidden md:block bg-gradient-to-t from-primary-dark to-transparent w-full h-80 absolute bottom-0 -z-10"></div>
+
     </div>
   );
 };
