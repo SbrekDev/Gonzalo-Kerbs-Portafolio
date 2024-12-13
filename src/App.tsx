@@ -13,7 +13,7 @@ function App() {
   return (
     <>
 
-      <div className="mt-0 relative">
+      <div className="mt-0 relative overflow-hidden">
         <NavComponent />
       </div>
       <div>
