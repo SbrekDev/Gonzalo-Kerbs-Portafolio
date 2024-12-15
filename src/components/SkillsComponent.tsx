@@ -82,11 +82,11 @@ const SkillsComponent = () => {
       <section className="profile" id="profile">
         <div className="flex flex-col items-center">
           <div className="flex flex-col items-center w-full xl:flex-row xl:gap-3">
-            <div className="flex justify-center mb-5 w-full ">
+            <div className="flex justify-center mb-3 xl:mb-0 w-full ">
               <div
                 data-aos="fade-up"
                 data-aos-duration="600"
-                className="w-full flex flex-col justify-center items-center gap-5 p-5 shadow-2xl rounded-md md:gap-5 lg:pt-20 xl:h-96"
+                className="w-full flex flex-col justify-center items-center gap-5 p-5 shadow-2xl rounded-md pt-20 xl:h-96"
               >
                 <h3 className="text-3xl text-center mb-3">PRESENTACIÓN</h3>
                 <p className="text-center font-extralight max-w-xl">
@@ -104,25 +104,28 @@ const SkillsComponent = () => {
                   <strong className="text-accent">mejorar la calidad </strong>
                   de mis servicios.
                 </p>
-                <a
+                <div
                   data-aos="zoom-in"
                   data-aos-duration="600"
                   data-aos-offset="0"
-                  className="text-center bg-accent px-5 py-3 rounded-md shadow-md hover:bg-secondary hover:text-accent md:hover:scale-110 md:transition-all md:mt-3"
-                  href="/cv/CV - Gonzalo Kerbs.pdf"
-                  download="CV - Gonzalo Kerbs"
                 >
-                  Descargar CV <i className="fa-solid fa-download" />
-                </a>
+                  <a
+                    className="text-center bg-accent px-5 py-3 rounded-md shadow-md hover:bg-secondary hover:text-accent md:transition-all md:mt-3"
+                    href="/cv/CV - Gonzalo Kerbs.pdf"
+                    download="CV - Gonzalo Kerbs"
+                  >
+                    Descargar CV <i className="fa-solid fa-download" />
+                  </a>
+                </div>
               </div>
             </div>
             <div
               data-aos="fade-up"
               data-aos-duration="600"
               data-aos-offset="0"
-              className="mb-5 flex flex-col justify-center items-center gap-5 p-6 mt-3 py-5 shadow-2xl rounded-md w-full xl:h-96 xl:mt-0"
+              className="w-full flex flex-col justify-start items-center gap-5 p-5 shadow-2xl rounded-md xl:pt-20 xl:h-96"
             >
-              <h3 className="text-3xl text-center mb-5">APTITUDES</h3>
+              <h3 className="text-3xl text-center mb-3 pt-5">APTITUDES</h3>
               <div className="flex flex-col gap-6 w-full font-extralight text-xl md:flex-row md:flex-wrap md:justify-center max-w-[650px] lg:grid lg:pl-10 lg:grid-cols-2 xl:grid-cols-2 break-words">
                 <p
                   data-aos="fade-up"
@@ -290,7 +293,6 @@ const SkillsComponent = () => {
             </div>
           </div>
         </div>
-
       </section>
     </div>
   );

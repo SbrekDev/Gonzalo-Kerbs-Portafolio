@@ -12,19 +12,14 @@ const PresentationComponent = () => {
     <div className="relative">
       <div
         className="h-screen w-full bg-fixed bg-cover bg-center absolute -z-10"
-        style={{ backgroundImage: 'url("images/background.webp")' }}
+        style={{ backgroundImage: 'url("images/bg2.png")' }}
       ></div>
       <div
-        className="w-full h-screen flex flex-col justify-around xl:justify-center"
+        className="w-full h-screen flex flex-col justify-center xl:justify-center"
         id="home"
       >
-        <div className="relative flex flex-col justify-center items-center mt-10 md:mt-24 xl:mt-0 xl:flex-row xl:gap-20">
-          <div className="relative flex justify-center items-center size-72 ">
-            <img
-              src="/circle.svg"
-              alt="efecto circulo"
-              className="absolute size-72"
-            />
+        <div className="flex flex-col justify-center items-center backdrop-blur-sm bg-secondary/25 pb-5 rounded-md w-11/12 mx-auto lg:w-full md:py-16 xl:flex-row xl:gap-20">
+          <div className="flex justify-center items-center size-72 ">
             <img
               data-aos="zoom-in"
               data-aos-duration="600"
@@ -37,7 +32,7 @@ const PresentationComponent = () => {
             <h1
               data-aos="fade-right"
               data-aos-duration="1500"
-              className="w-72 md:w-full text-6xl font-semibold text-center text-primary-dark drop-shadow-lg xl:text-[6rem]"
+              className="w-72 md:w-full text-3xl md:text-6xl font-semibold text-center text-primary-dark drop-shadow-lg xl:text-[6rem]"
             >
               Gonzalo Kerbs
             </h1>
@@ -48,13 +43,11 @@ const PresentationComponent = () => {
             >
               Desarrollador FullStack
             </h2>
-          </div>
-        </div>
-        <div className="flex justify-center gap-4 text-2xl text-primary-light/70 drop-shadow-md md:text-4xl md:gap-8 lg:absolute lg:bottom-10 lg:right-10 lg:z-10">
+        <div className="flex justify-center gap-4 text-2xl text-primary-light/70 drop-shadow-md mt-5 md:text-4xl md:gap-8">
           <div data-aos="zoom-in" data-aos-duration="1500" data-aos-offset="0">
             <div className="md:hover:scale-125 md:transition-all">
               <a
-                className="hover:text-accent md:hover:scale-125 md:transition-all "
+                className="hover:text-primary-dark md:hover:scale-125 md:transition-all "
                 href="https://www.linkedin.com/in/gonzalo-kerbs"
                 target="_blank"
                 aria-label="link linkedin"
@@ -66,7 +59,7 @@ const PresentationComponent = () => {
           <div data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="0">
             <div className="md:hover:scale-125 md:transition-all">
               <a
-                className="hover:text-accent md:duration-200 "
+                className="hover:text-primary-dark md:duration-200 "
                 href="https://api.whatsapp.com/send?phone=543435031208"
                 target="_blank"
                 aria-label="link whatsapp"
@@ -78,7 +71,7 @@ const PresentationComponent = () => {
           <div data-aos="zoom-in" data-aos-duration="2500" data-aos-offset="0">
             <div className="md:hover:scale-125 md:transition-all">
               <a
-                className="hover:text-accent md:duration-200 "
+                className="hover:text-primary-dark md:duration-200 "
                 href="https://www.instagram.com/gonzaakerbs"
                 target="_blank"
                 aria-label="link instagram"
@@ -90,7 +83,7 @@ const PresentationComponent = () => {
           <div data-aos="zoom-in" data-aos-duration="3000" data-aos-offset="0">
             <div className="md:hover:scale-125 md:transition-all">
               <a
-                className="hover:text-accent md:duration-200 "
+                className="hover:text-primary-dark md:duration-200 "
                 href="https://twitter.com/GonzaaaKerbs"
                 target="_blank"
                 aria-label="link twitter x"
@@ -100,14 +93,16 @@ const PresentationComponent = () => {
             </div>
           </div>
         </div>
+          </div>
+        </div>
         <div
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-offset="0"
-          className="flex justify-center relative lg:absolute lg:bottom-10 lg:right-0 lg:left-0"
+          className="flex justify-center absolute bottom-10 right-0 left-0"
         >
           <a
-            className="text-primary-light hover:scale-150 md:transition-all hover:text-accent "
+            className="text-primary-light hover:scale-150 md:transition-all hover:text-primary-dark "
             href="#profile"
             aria-label="siguiente pagina"
           >
@@ -115,13 +110,7 @@ const PresentationComponent = () => {
           </a>
         </div>
       </div>
-      <div className="absolute w-full -z-10 overflow-hidden bottom-0 md:bottom-[-100px] lg:bottom-[-200px] xl:bottom-[-350px]">
-        <img
-          src="/wave.svg"
-          alt="animated waves"
-          className="w-full h-full object-cover"
-        />
-      </div>
+
 
     </div>
   );

@@ -176,7 +176,7 @@ const ProjectsComponent = () => {
               className="w-60 drop-shadow-lg"
             />
           </div>
-          <div className="flex flex-col justify-center items-center gap-5 px-6 w-full">
+          <div className="flex flex-col justify-center items-center gap-5 px-6">
             <h3 className="text-primary-dark text-3xl text-center mb-3 py-2 px-2 border-b border-primary-dark">
               EXPERIENCIA
             </h3>
