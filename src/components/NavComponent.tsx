@@ -12,7 +12,7 @@ const NavComponent = () => {
     <nav
       className={`${
         navClick ? "h-56 z-50" : "h-12"
-      } w-full md:h-16 md:w-full absolute top-0 flex flex-col md:flex-row md:justify-center md:items-center bg-primary-dark/95 text-primary-light shadow-md z-50 md:bg-primary-dark/85 md:text-primary-light md:shadow-xl`}
+      } w-full md:h-16 md:w-full backdrop-blur-sm absolute top-0 flex flex-col md:flex-row md:justify-center md:items-center bg-primary-dark/95 text-primary-light shadow-md z-50 md:fixed md:bg-primary-dark/85 md:text-primary-light md:shadow-xl`}
     >
       <div className='flex justify-between items-center px-5'>
         <h3 className="md:hidden font-extralight text-primary-light">

@@ -78,7 +78,7 @@ const SkillsComponent = () => {
   ];
 
   return (
-    <div className="relative bg-primary-dark text-primary-light py-5 px-3 md:px-12 lg:px-44 z-50">
+    <div className="relative bg-primary-dark text-primary-light py-5 px-3 md:px-12 lg:px-44 z-40">
       <section className="profile" id="profile">
         <div className="flex flex-col items-center">
           <div className="flex flex-col items-center w-full xl:flex-row xl:gap-3">
