@@ -110,7 +110,7 @@ const PresentationComponent = () => {
           </a>
         </div>
       </div>
-
+      <div className="absolute bottom-0 w-full h-6 bg-gradient-to-t from-primary-dark to-transparent "></div>
 
     </div>
   );
