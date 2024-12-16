@@ -20,13 +20,13 @@ const PresentationComponent = () => {
       >
         <div className="flex flex-col justify-center items-center gap-6 backdrop-blur-sm bg-secondary/25 rounded-md w-11/12 mx-auto lg:w-full py-16 xl:flex-row xl:gap-20">
           <div className="bg-primary-dark/85 md:p-10 rounded-xl"> 
-            <div className="flex justify-center items-center size-72">
+            <div className="flex justify-center items-center ">
               <img
                 data-aos="zoom-in"
                 data-aos-duration="600"
                 src="images/profile__img2.webp"
                 alt="retrato gonzalo"
-                className="w-56 md:w-72 drop-shadow-lg"
+                className="w-56 md:w-72"
               />
             </div>
           </div>
