@@ -12,7 +12,7 @@ const PresentationComponent = () => {
     <div className="relative">
       <div
         className="h-screen w-full bg-fixed bg-cover bg-center absolute -z-10"
-        style={{ backgroundImage: 'url("images/bg2.webp")' }}
+        style={{ backgroundImage: 'url("images/bg2.webp")'}}
       ></div>
       <div
         className="w-full h-screen flex flex-col justify-center xl:justify-center"
