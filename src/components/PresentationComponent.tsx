@@ -33,14 +33,14 @@ const PresentationComponent = () => {
           <div className="flex justify-center flex-col  xl:mt-0 xl:items-start select-none">
             <h1
               data-aos="fade-right"
-              data-aos-duration="1500"
+              data-aos-duration="500"
               className="w-72 md:w-full text-3xl md:text-6xl font-semibold text-center text-primary-dark xl:text-[6rem]"
             >
               Gonzalo Kerbs
             </h1>
             <h2
               data-aos="fade-left"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
               className="mt-1 text-primary-light text-center md:text-3xl xl:text-5xl"
             >
               Desarrollador FullStack
