@@ -34,14 +34,14 @@ const PresentationComponent = () => {
             <h1
               data-aos="fade-right"
               data-aos-duration="1500"
-              className="w-72 md:w-full text-3xl md:text-6xl font-semibold text-center text-primary-dark drop-shadow-lg xl:text-[6rem]"
+              className="w-72 md:w-full text-3xl md:text-6xl font-semibold text-center text-primary-dark xl:text-[6rem]"
             >
               Gonzalo Kerbs
             </h1>
             <h2
               data-aos="fade-left"
               data-aos-duration="2000"
-              className="mt-1 text-primary-light drop-shadow text-center md:text-3xl xl:text-5xl"
+              className="mt-1 text-primary-light text-center md:text-3xl xl:text-5xl"
             >
               Desarrollador FullStack
             </h2>
