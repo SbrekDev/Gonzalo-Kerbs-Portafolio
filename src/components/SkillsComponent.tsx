@@ -1,37 +1,37 @@
 const SkillsComponent = () => {
   const lenguajes = [
-    ["HTML", "Profesional", "html5"],
-    ["CSS", "Profesional", "css3"],
-    ["JAVASCRIPT", "Profesional", "javascript"],
-    ["PHP", "Intermedio", "php"],
-    ["JAVA", "Intermedio", "java"],
-    ["C#", "Aprendiz", "csharp"],
-    ["PYTHON", "Intermedio", "python"],
-    ["SQL", "Avanzado", "azuresqldatabase"],
+    ["HTML", "Profesional", "html5", 100],
+    ["CSS", "Profesional", "css3", 100],
+    ["JAVASCRIPT", "Profesional", "javascript", 100],
+    ["SQL", "Avanzado", "azuresqldatabase", 80],
+    ["PHP", "Intermedio", "php", 70],
+    ["JAVA", "Intermedio", "java", 60],
+    ["PYTHON", "Intermedio", "python", 60],
+    ["C#", "Aprendiz", "csharp", 30],
   ];
 
   const tecnologias = [
-    ["TYPESCRIPT", "Profesional", "typescript"],
-    ["REACT", "Profesional", "react"],
-    ["REACT NATIVE", "Intermedio", "react"],
-    ["NEXT JS", "Intermedio", "nextjs"],
-    ["VUE", "Intermedio", "vuejs"],
-    ["Angular", "Intermedio", "angular"],
-    ["NODE JS", "Profesional", "nodejs"],
-    ["GIT", "Avanzado", "git"],
-    ["MYSQL", "Avanzado", "mysql"],
-    ["POSTGRE SQL", "Intermedio", "postgresql"],
-    ["MONGO DB", "Avanzado", "mongodb"],
-    ["SEQUELIZE", "Avanzado", "sequelize"],
-    ["EXPRESS", "Avanzado", "nodejs"],
+    ["TYPESCRIPT", "Profesional", "typescript", 100],
+    ["REACT", "Profesional", "react", 100],
+    ["NODE JS", "Profesional", "nodejs", 100],
+    ["GIT", "Avanzado", "git", 80],
+    ["MYSQL", "Avanzado", "mysql", 80],
+    ["MONGO DB", "Avanzado", "mongodb", 80],
+    ["SEQUELIZE", "Avanzado", "sequelize", 80],
+    ["EXPRESS", "Avanzado", "nodejs", 80],
+    ["REACT NATIVE", "Intermedio", "react", 60],
+    ["NEXT JS", "Intermedio", "nextjs", 70],
+    ["VUE", "Intermedio", "vuejs", 70],
+    ["Angular", "Intermedio", "angular", 60],
+    ["POSTGRE SQL", "Intermedio", "postgresql", 70],
   ];
 
   const complementos = [
-    ["ADOBE PHOTOSHOP", "Profesional", "photoshop"],
-    ["ADOBE PREMIERE", "Avanzado", "premierepro"],
-    ["ADOBE ILLUSTRATOR", "Intermedio", "illustrator"],
-    ["AUTODESK AUTOCAD", "Intermedio", "elixir"],
-    ["AUTODESK FUSION 360", "Intermedio", "elixir"],
+    ["ADOBE PHOTOSHOP", "Profesional", "photoshop", 100],
+    ["ADOBE PREMIERE", "Avanzado", "premierepro", 80],
+    ["ADOBE ILLUSTRATOR", "Intermedio", "illustrator", 70],
+    ["AUTODESK AUTOCAD", "Intermedio", "elixir", 70],
+    ["AUTODESK FUSION 360", "Intermedio", "elixir", 70],
   ];
 
   const certificaciones = [
@@ -193,10 +193,18 @@ const SkillsComponent = () => {
                   data-aos-offset="100"
                   key={Math.random() + Math.random()}
                 >
-                  <div className="flex justify-between items-center gap-4  w-full px-5 py-3 bg-gradient-to-r from-accent/90 to-transparent select-none md:transition-all md:hover:scale-95">
-                    <div>
+                  <div className="flex justify-between items-center gap-4 rounded-md w-full px-5 py-3 border-t-[3px] border-accent shadow-xl bg-secondary/30 select-none md:transition-all md:hover:scale-95">
+                    <div className="w-full">
                       <p className="font-semibold">{lenguaje[0]}</p>
-                      <p className=" text-sm">{lenguaje[1]}</p>
+                      <div className=" flex gap-1 flex-col">
+                        <p className="text-sm">{lenguaje[1]}</p>
+                        <div className={`w-full h-2 rounded-full bg-accent/20`}>
+                          <div
+                            className={`h-full bg-accent accent-shadow rounded-full`}
+                            style={{ width: `${lenguaje[3]}%` }}
+                          ></div>
+                        </div>
+                      </div>
                     </div>
                     <i
                       className={`devicon-${lenguaje[2]}-plain text-accent text-4xl`}
@@ -221,10 +229,18 @@ const SkillsComponent = () => {
                   data-aos-offset="100"
                   key={Math.random() + Math.random()}
                 >
-                  <div className="flex justify-between  items-center gap-4  w-full px-5 py-3 bg-gradient-to-r from-accent/80 to-transparent select-none md:transition-all md:hover:scale-95">
-                    <div>
+                  <div className="flex justify-between  items-center gap-4 rounded-md w-full px-5 py-3 border-t-[3px] border-accent shadow-xl bg-secondary/30 select-none md:transition-all md:hover:scale-95">
+                    <div className="w-full">
                       <p className="font-semibold">{tecnologia[0]}</p>
-                      <p className=" text-sm">{tecnologia[1]}</p>
+                      <div className=" flex gap-1 flex-col">
+                        <p className="text-sm">{tecnologia[1]}</p>
+                        <div className={`w-full h-2 rounded-full bg-accent/20`}>
+                          <div
+                            className={`h-full bg-accent accent-shadow rounded-full`}
+                            style={{ width: `${tecnologia[3]}%` }}
+                          ></div>
+                        </div>
+                      </div>
                     </div>
                     <i
                       className={`devicon-${tecnologia[2]}-plain text-accent text-4xl`}
@@ -250,10 +266,18 @@ const SkillsComponent = () => {
                   data-aos-offset="100"
                   key={Math.random() + Math.random()}
                 >
-                  <div className="flex justify-between items-center gap-4  w-full px-5 py-3 bg-gradient-to-r from-accent2/80 to-transparent select-none md:transition-all md:hover:scale-95">
-                    <div>
+                  <div className="flex justify-between items-center gap-4 rounded-md w-full px-5 py-3 border-t-[3px] border-accent2 shadow-xl bg-secondary/30 select-none md:transition-all md:hover:scale-95">
+                    <div className="w-full">
                       <p className="font-semibold">{complemento[0]}</p>
-                      <p className=" text-sm">{complemento[1]}</p>
+                      <div className=" flex gap-1 flex-col">
+                        <p className="text-sm">{complemento[1]}</p>
+                        <div className={`w-full h-2 rounded-full bg-accent2/20`}>
+                          <div
+                            className={`h-full bg-accent2 shadow-secondaccent rounded-full`}
+                            style={{ width: `${complemento[3]}%` }}
+                          ></div>
+                        </div>
+                      </div>
                     </div>
                     <i
                       className={`devicon-${complemento[2]}-plain text-accent2 text-4xl`}
@@ -280,7 +304,7 @@ const SkillsComponent = () => {
                 >
                   <a
                     target="_blank"
-                    className="bg-gradient-to-b from-transparent to-secondary/70 rounded-md p-3 flex flex-col justify-center items-center gap-2 h-40 md:h-48 md:p-6 md:hover:scale-90 md:transition-all"
+                    className="bg-gradient-to-b from-transparent to-secondary/30 rounded-md p-3 flex flex-col justify-center items-center gap-2 h-40 md:h-48 md:p-6 md:hover:scale-90 md:transition-all"
                     href={certificacion[1]}
                   >
                     <i className="fa-solid fa-graduation-cap text-3xl text-accent md:text-6xl md:mb-5" />

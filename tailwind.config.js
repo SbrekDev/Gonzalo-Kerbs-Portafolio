@@ -16,10 +16,11 @@ export default {
         accent2: "#00afee"
       },
       boxShadow: {
-        'accent': '#7a30b0',
+        'accent': '0 4px 6px rgba(122, 48, 176, 0.5)',
+        'secondaccent': '0 4px 6px rgba(0, 175, 238, 0.5)',
       },
       screens: {
-      xl: '1350px', // O define un nuevo breakpoint aquí si es necesario.
+      xl: '1350px',
     },
     },
   },
