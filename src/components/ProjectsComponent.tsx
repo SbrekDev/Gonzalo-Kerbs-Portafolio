@@ -231,6 +231,7 @@ const ProjectsComponent = () => {
                             className="w-full h-full object-cover"
                             src={proyecto.pathImg}
                             alt={proyecto.nombre}
+                            loading="lazy"
                           />
                         </div>
                         <h3>{proyecto.nombre}</h3>
