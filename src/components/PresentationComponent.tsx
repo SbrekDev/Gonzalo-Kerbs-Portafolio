@@ -18,8 +18,8 @@ const PresentationComponent = () => {
         className="w-full h-screen flex flex-col justify-center xl:justify-center"
         id="home"
       >
-        <div className="flex flex-col justify-center items-center gap-6 backdrop-blur-sm bg-secondary/25 rounded-md w-11/12 mx-auto lg:w-full py-16 xl:flex-row xl:gap-20">
-          <div className="bg-primary-dark/85 md:p-10 rounded-xl"> 
+        <div className="flex flex-col justify-center items-center gap-6 backdrop-blur-sm bg-primary-dark/25 rounded-md w-11/12 mx-auto lg:w-full py-16 xl:flex-row xl:gap-20">
+          <div className="bg-primary-dark/55 md:p-10 rounded-xl"> 
             <div className="flex justify-center items-center size-72">
               <img
                 data-aos="zoom-in"
