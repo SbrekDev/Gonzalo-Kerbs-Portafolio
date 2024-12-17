@@ -1,3 +1,5 @@
+
+
 const SkillsComponent = () => {
   const lenguajes = [
     ["HTML", "Profesional", "html5", 100],
@@ -77,6 +79,8 @@ const SkillsComponent = () => {
     ],
   ];
 
+  
+
   return (
     <div className="relative bg-primary-dark text-primary-light py-5 px-3 md:px-12 lg:px-44 z-40">
       <section className="profile" id="profile">
@@ -86,7 +90,7 @@ const SkillsComponent = () => {
               <div
                 data-aos="fade-up"
                 data-aos-duration="600"
-                className="w-full flex flex-col justify-center items-center gap-5 p-5 shadow-2xl rounded-md pt-20 xl:h-96"
+                className="w-full flex flex-col justify-center items-center gap-6 p-5 shadow-2xl rounded-md pt-20 pb-8 xl:pb-5 xl:h-96"
               >
                 <h3 className="text-3xl text-center mb-3">PRESENTACIÓN</h3>
                 <p className="text-center font-extralight max-w-xl">
@@ -186,12 +190,12 @@ const SkillsComponent = () => {
           >
             <h3 className="text-3xl text-center mb-5">LENGUAJES</h3>
             <div className="grid gap-4 px-3 md:grid-cols-2 md:px-12 w-full xl:grid-cols-3">
-              {lenguajes.map((lenguaje) => (
+              {lenguajes.map((lenguaje, i) => (
                 <div
                   data-aos="zoom-in"
                   data-aos-duration="300"
                   data-aos-offset="100"
-                  key={Math.random() + Math.random()}
+                  key={`lenguaje - ${i}`}
                 >
                   <div className="flex justify-between items-center gap-4 rounded-md w-full px-5 py-3 border-t-[3px] border-accent shadow-xl bg-secondary/30 select-none md:transition-all md:hover:scale-95">
                     <div className="w-full">
@@ -201,7 +205,9 @@ const SkillsComponent = () => {
                         <div className={`w-full h-2 rounded-full bg-accent/20`}>
                           <div
                             className={`h-full bg-accent accent-shadow rounded-full`}
-                            style={{ width: `${lenguaje[3]}%` }}
+                            style={{
+                              width: `${lenguaje[3]}%`
+                            }}
                           ></div>
                         </div>
                       </div>
@@ -222,12 +228,12 @@ const SkillsComponent = () => {
           >
             <h3 className="text-3xl text-center mb-5">TECNOLOGÍAS</h3>
             <div className="grid px-3 md:grid-cols-2 gap-4 md:px-12 xl:grid-cols-3">
-              {tecnologias.map((tecnologia) => (
+              {tecnologias.map((tecnologia, i) => (
                 <div
                   data-aos="zoom-in"
                   data-aos-duration="300"
                   data-aos-offset="100"
-                  key={Math.random() + Math.random()}
+                  key={`tecnlogia - ${i}`}
                 >
                   <div className="flex justify-between  items-center gap-4 rounded-md w-full px-5 py-3 border-t-[3px] border-accent shadow-xl bg-secondary/30 select-none md:transition-all md:hover:scale-95">
                     <div className="w-full">
@@ -259,19 +265,21 @@ const SkillsComponent = () => {
           >
             <h3 className="text-3xl text-center mb-5">COMPLEMENTOS</h3>
             <div className="grid px-3 md:grid-cols-2 gap-4 md:px-12 xl:grid-cols-3">
-              {complementos.map((complemento) => (
+              {complementos.map((complemento, i) => (
                 <div
                   data-aos="zoom-in"
                   data-aos-duration="300"
                   data-aos-offset="100"
-                  key={Math.random() + Math.random()}
+                  key={`complemento - ${i}`}
                 >
                   <div className="flex justify-between items-center gap-4 rounded-md w-full px-5 py-3 border-t-[3px] border-accent2 shadow-xl bg-secondary/30 select-none md:transition-all md:hover:scale-95">
                     <div className="w-full">
                       <p className="font-semibold">{complemento[0]}</p>
                       <div className=" flex gap-1 flex-col">
                         <p className="text-sm">{complemento[1]}</p>
-                        <div className={`w-full h-2 rounded-full bg-accent2/20`}>
+                        <div
+                          className={`w-full h-2 rounded-full bg-accent2/20`}
+                        >
                           <div
                             className={`h-full bg-accent2 shadow-secondaccent rounded-full`}
                             style={{ width: `${complemento[3]}%` }}
@@ -296,11 +304,11 @@ const SkillsComponent = () => {
           >
             <h3 className="text-3xl text-center mb-5">CERTIFICACIONES</h3>
             <div className="grid grid-cols-2  gap-3 lg:grid-cols-3 xl:grid-cols-4 lg:gap-6">
-              {certificaciones.map((certificacion) => (
+              {certificaciones.map((certificacion, i) => (
                 <div
                   data-aos="flip-down"
                   data-aos-duration="600"
-                  key={Math.random() + Math.random()}
+                  key={`certificacion - ${i}`}
                 >
                   <a
                     target="_blank"
