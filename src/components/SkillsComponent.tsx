@@ -129,8 +129,8 @@ const SkillsComponent = () => {
               data-aos-offset="0"
               className="w-full flex flex-col justify-start items-center gap-5 p-5 shadow-2xl rounded-md xl:pt-20 xl:h-96"
             >
-              <h3 className="text-3xl text-center mb-3 pt-5">APTITUDES</h3>
-              <div className="flex flex-col gap-6 w-full font-extralight text-xl md:flex-row md:flex-wrap md:justify-center max-w-[650px] lg:grid lg:pl-10 lg:grid-cols-2 xl:grid-cols-2 break-words">
+              <h3 className="text-3xl text-center mb-3 pt-5 lg:pt-3">APTITUDES</h3>
+              <div className="flex flex-col gap-6 w-full font-extralight text-xl md:flex-row md:flex-wrap md:justify-center max-w-[650px] lg:grid lg:pl-10 lg:grid-cols-2 lg:gap-8 break-words">
                 <p
                   data-aos="fade-up"
                   data-aos-duration="800"

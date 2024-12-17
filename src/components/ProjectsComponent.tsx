@@ -256,7 +256,7 @@ const ProjectsComponent = () => {
             isOpen={!!selectedProject}
             onRequestClose={closeModal}
             className="outline-none mt-10 backdrop-blur-md bg-primary-light/90 rounded-lg max-w-lg w-full shadow-2xl mx-5 relative text-center font-extralight flex flex-col gap-5"
-            overlayClassName="outline-none fixed inset-0 bg-black bg-opacity-50 backdrop-blur flex items-center justify-center"
+            overlayClassName="outline-none fixed inset-0 bg-black bg-opacity-50 backdrop-blur flex items-center justify-center z-50"
             contentLabel="Project Modal"
           >
             <h3 className="font-extralight text-primary-light absolute text-6xl top-[-100px] left-0 right-0 drop-shadow-xl">
