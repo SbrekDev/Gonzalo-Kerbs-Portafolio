@@ -115,7 +115,7 @@ const SkillsComponent = () => {
                 >
                   <a
                     className="text-center bg-accent px-5 py-3 rounded-md shadow-md hover:bg-secondary hover:text-accent md:transition-all md:mt-3"
-                    href="/cv/CV - Gonzalo Kerbs.pdf"
+                    href="documents/CV - Gonzalo Kerbs.pdf"
                     download="CV - Gonzalo Kerbs"
                   >
                     Descargar CV <i className="fa-solid fa-download" />
