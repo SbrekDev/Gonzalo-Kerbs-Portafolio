@@ -69,12 +69,12 @@ const ContactComponent = () => {
                   <i className="fa-brands fa-instagram" />
                 </a>
                 <a
-                  href="https://twitter.com/GonzaaaKerbs"
+                  href="https://github.com/SbrekDev"
                   target="_blank"
-                  aria-label="link twitter x"
+                  aria-label="link github"
                   className="md:hover:scale-125 md:hover:text-accent transition-all md:hover:drop-shadow-md"
                 >
-                  <i className="fa-brands fa-x-twitter" />
+                  <i className="fa-brands fa-github" />
                 </a>
               </div>
             </div>

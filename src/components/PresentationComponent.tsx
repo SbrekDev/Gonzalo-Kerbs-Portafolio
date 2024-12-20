@@ -12,14 +12,14 @@ const PresentationComponent = () => {
     <div className="relative">
       <div
         className="h-screen w-full bg-fixed bg-cover bg-center absolute -z-10"
-        style={{ backgroundImage: 'url("images/bg2.webp")'}}
+        style={{ backgroundImage: 'url("images/bg2.webp")' }}
       ></div>
       <div
         className="w-full h-screen flex flex-col justify-center xl:justify-center"
         id="home"
       >
         <div className="flex flex-col justify-center items-center gap-6 backdrop-blur-sm bg-primary-dark/25 rounded-md w-11/12 mx-auto lg:w-full py-16 xl:flex-row xl:gap-20">
-          <div className="bg-primary-dark/55 md:p-10 rounded-xl"> 
+          <div className="bg-primary-dark/55 md:p-10 rounded-xl">
             <div className="flex justify-center items-center size-72">
               <img
                 data-aos="zoom-in"
@@ -102,11 +102,11 @@ const PresentationComponent = () => {
                 <div className="md:hover:scale-125 md:transition-all">
                   <a
                     className="hover:text-primary-dark md:duration-200 "
-                    href="https://twitter.com/GonzaaaKerbs"
+                    href="https://github.com/SbrekDev"
                     target="_blank"
-                    aria-label="link twitter x"
+                    aria-label="link github x"
                   >
-                    <i className="fa-brands fa-x-twitter" />
+                    <i className="fa-brands fa-github" />
                   </a>
                 </div>
               </div>
