@@ -75,8 +75,8 @@ const proyectos = [
   },
   {
     nombre: "DevTree",
-    tags: ["React", "TailwindCSS", "NodeJs", "TypeScript"],
-    iconos: ["react", "tailwindcss", "nodejs", "vite", "typescript"],
+    tags: ["React", "TailwindCSS", "NodeJs", "TypeScript", "MongoDB"],
+    iconos: ["react", "tailwindcss", "nodejs", "vite", "typescript", "mongodb"],
     pathImg: "projectImages/devtree.png",
     url: "https://www.youtube.com/embed/Ksv-ccthY9Q",
   },
