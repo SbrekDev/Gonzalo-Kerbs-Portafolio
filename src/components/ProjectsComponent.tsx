@@ -74,6 +74,13 @@ const proyectos = [
     url: "https://www.youtube.com/embed/h9hEBgOAP4k",
   },
   {
+    nombre: "DevTree",
+    tags: ["React", "TailwindCSS", "NodeJs", "TypeScript"],
+    iconos: ["react", "tailwindcss", "nodejs", "vite", "typescript"],
+    pathImg: "projectImages/devtree.png",
+    url: "https://www.youtube.com/embed/Ksv-ccthY9Q",
+  },
+  {
     nombre: "Peluquería PHP",
     tags: ["PHP", "Sass", "MySql", "JavaScript"],
     iconos: ["php", "sass", "mysql", "javascript"],
