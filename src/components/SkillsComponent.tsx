@@ -25,16 +25,17 @@ const SkillsComponent = () => {
     ["NEXT JS", "Intermedio", "nextjs", 70],
     ["VUE", "Intermedio", "vuejs", 70],
     ["Angular", "Intermedio", "angular", 60],
-    ["POSTGRE SQL", "Intermedio", "postgresql", 70],
+    ["POSTGRE SQL", "Intermedio", "postgresql", 60],
+    ["NEST JS", "Intermedio", "nestjs", 60],
   ];
 
-  const complementos = [
-    ["ADOBE PHOTOSHOP", "Profesional", "photoshop", 100],
-    ["ADOBE PREMIERE", "Avanzado", "premierepro", 80],
-    ["ADOBE ILLUSTRATOR", "Intermedio", "illustrator", 70],
-    ["AUTODESK AUTOCAD", "Intermedio", "elixir", 70],
-    ["AUTODESK FUSION 360", "Intermedio", "elixir", 70],
-  ];
+  // const complementos = [
+  //   ["ADOBE PHOTOSHOP", "Profesional", "photoshop", 100],
+  //   ["ADOBE PREMIERE", "Avanzado", "premierepro", 80],
+  //   ["ADOBE ILLUSTRATOR", "Intermedio", "illustrator", 70],
+  //   ["AUTODESK AUTOCAD", "Intermedio", "elixir", 70],
+  //   ["AUTODESK FUSION 360", "Intermedio", "elixir", 70],
+  // ];
 
   const certificaciones = [
     [
@@ -60,6 +61,10 @@ const SkillsComponent = () => {
     [
       "React, TypeScript",
       "https://www.udemy.com/certificate/UC-4c4e6275-86fc-432a-bc50-763eeb54e1ce/",
+    ],
+    [
+      "React, NestJs, NextJs, TypeScript",
+      "https://www.udemy.com/certificate/UC-20286ed0-a8dc-4ab8-bc3c-8dd19ba6e51c/",
     ],
     [
       "React, NextJS, MongoDB, GraphQL",
@@ -90,9 +95,9 @@ const SkillsComponent = () => {
               <div
                 data-aos="fade-up"
                 data-aos-duration="600"
-                className="w-full flex flex-col justify-center items-center gap-6 p-5 shadow-2xl rounded-md pt-20 pb-8 xl:pb-5 xl:h-96"
+                className="w-full flex flex-col justify-center items-center gap-6 p-5 shadow-2xl rounded-md pt-28 pb-8 xl:pb-12 "
               >
-                <h3 className="text-3xl text-center mb-3">PRESENTACIÓN</h3>
+                <h3 className="text-3xl text-center mb-1">SOBRE MÍ</h3>
                 <p className="text-center font-extralight max-w-xl">
                   Desarrollador Fullstack autodidacta, apasionado por la{" "}
                   <strong className="text-accent">
@@ -123,7 +128,7 @@ const SkillsComponent = () => {
                 </div>
               </div>
             </div>
-            <div
+            {/* <div
               data-aos="fade-up"
               data-aos-duration="600"
               data-aos-offset="0"
@@ -180,7 +185,7 @@ const SkillsComponent = () => {
                   Compañerismo
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
           <div
             data-aos="fade-up"
@@ -257,7 +262,7 @@ const SkillsComponent = () => {
             </div>
           </div>
 
-          <div
+          {/* <div
             data-aos="fade-up"
             data-aos-duration="600"
             data-aos-offset="0"
@@ -294,7 +299,7 @@ const SkillsComponent = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
 
           <div
             data-aos="fade-up"
