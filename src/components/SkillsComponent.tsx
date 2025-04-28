@@ -118,13 +118,22 @@ const SkillsComponent = () => {
                   data-aos-duration="600"
                   data-aos-offset="0"
                 >
-                  <a
-                    className="text-center bg-accent px-5 py-3 rounded-md shadow-md hover:bg-secondary hover:text-accent md:transition-all md:mt-3"
-                    href="documents/CV - Gonzalo Kerbs.pdf"
-                    download="CV - Gonzalo Kerbs"
-                  >
-                    Descargar CV <i className="fa-solid fa-download" />
-                  </a>
+                  <div className="flex flex-col sm:flex-row gap-5">
+                    <a
+                      className="text-center bg-accent px-5 py-3 rounded-md shadow-md hover:bg-secondary hover:text-accent md:transition-all md:mt-3"
+                      href="documents/CV - Gonzalo Kerbs - ES.pdf"
+                      download="CV - Gonzalo Kerbs - ES"
+                    >
+                      Descargar CV (ES) <i className="fa-solid fa-download" />
+                    </a>
+                    <a
+                      className="text-center bg-accent px-5 py-3 rounded-md shadow-md hover:bg-secondary hover:text-accent md:transition-all md:mt-3"
+                      href="documents/CV - Gonzalo Kerbs - EN.pdf"
+                      download="CV - Gonzalo Kerbs- EN"
+                    >
+                      Descargar CV (EN) <i className="fa-solid fa-download" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
