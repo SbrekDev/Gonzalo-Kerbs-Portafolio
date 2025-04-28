@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next';
 
 const NavComponent = () => {
@@ -6,18 +6,13 @@ const NavComponent = () => {
     const [navClick, setNavClick] = useState(false);
     const [langClick, setLangClick] = useState(false)
     const { t, i18n } = useTranslation()
-
     const handleLang = () => {
-      setLangClick(prev => {
-        const newLangClick = !prev;
-        if (newLangClick) {
-          i18n.changeLanguage('es');
-        } else {
-          i18n.changeLanguage('en');
-        }
-        return newLangClick;
-      });
+      setLangClick(prev => !prev);
     };
+
+    useEffect(() => {
+      i18n.changeLanguage(langClick ? 'es' : 'en');
+    }, [langClick]); 
 
     const desplegarNav = () => {
         setNavClick(!navClick);
@@ -70,7 +65,7 @@ const NavComponent = () => {
           {t('NAV_CONTACT')}
         </a>
       </div>
-      <div className={`flex justify-center md:justify-end items-center gap-5 absolute inset-0 md:right-16`}>
+      <div className={`flex w-40 items-center gap-5 absolute ${navClick ? 'hidden' : 'left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2'} md:left-auto md:translate-x-0 md:right-16`}>
         <p className={`${langClick ? '' : 'text-accent'}`}>EN</p>
 
         <button
