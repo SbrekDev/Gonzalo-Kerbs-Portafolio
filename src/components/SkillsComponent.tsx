@@ -1,32 +1,36 @@
+import { useTranslation } from "react-i18next";
 
 
 const SkillsComponent = () => {
+
+  const {t} = useTranslation()
+
   const lenguajes = [
-    ["HTML", "Profesional", "html5", 100],
-    ["CSS", "Profesional", "css3", 100],
-    ["JAVASCRIPT", "Profesional", "javascript", 100],
-    ["SQL", "Avanzado", "azuresqldatabase", 80],
-    ["PHP", "Intermedio", "php", 70],
-    ["JAVA", "Intermedio", "java", 60],
-    ["PYTHON", "Intermedio", "python", 60],
-    ["C#", "Aprendiz", "csharp", 30],
+    ["HTML", t("SKILLS_HABILTIES_PROFESSIONAL"), "html5", 100],
+    ["CSS", t("SKILLS_HABILTIES_PROFESSIONAL"), "css3", 100],
+    ["JAVASCRIPT", t("SKILLS_HABILTIES_PROFESSIONAL"), "javascript", 100],
+    ["SQL", t("SKILLS_HABILTIES_ADVANCED"), "azuresqldatabase", 80],
+    ["PHP", t("SKILLS_HABILTIES_INTERMEDIATE"), "php", 70],
+    ["JAVA", t("SKILLS_HABILTIES_INTERMEDIATE"), "java", 60],
+    ["PYTHON", t("SKILLS_HABILTIES_INTERMEDIATE"), "python", 60],
+    ["C#", t("SKILLS_HABILTIES_BASIC"), "csharp", 30],
   ];
 
   const tecnologias = [
-    ["TYPESCRIPT", "Profesional", "typescript", 100],
-    ["REACT", "Profesional", "react", 100],
-    ["NODE JS", "Profesional", "nodejs", 100],
-    ["GIT", "Avanzado", "git", 80],
-    ["MYSQL", "Avanzado", "mysql", 80],
-    ["MONGO DB", "Avanzado", "mongodb", 80],
-    ["SEQUELIZE", "Avanzado", "sequelize", 80],
-    ["EXPRESS", "Avanzado", "nodejs", 80],
-    ["REACT NATIVE", "Intermedio", "react", 60],
-    ["NEXT JS", "Intermedio", "nextjs", 70],
-    ["VUE", "Intermedio", "vuejs", 70],
-    ["Angular", "Intermedio", "angular", 60],
-    ["POSTGRE SQL", "Intermedio", "postgresql", 60],
-    ["NEST JS", "Intermedio", "nestjs", 60],
+    ["TYPESCRIPT", t("SKILLS_HABILTIES_PROFESSIONAL"), "typescript", 100],
+    ["REACT", t("SKILLS_HABILTIES_PROFESSIONAL"), "react", 100],
+    ["NODE JS", t("SKILLS_HABILTIES_PROFESSIONAL"), "nodejs", 100],
+    ["GIT", t("SKILLS_HABILTIES_ADVANCED"), "git", 80],
+    ["MYSQL", t("SKILLS_HABILTIES_ADVANCED"), "mysql", 80],
+    ["MONGO DB", t("SKILLS_HABILTIES_ADVANCED"), "mongodb", 80],
+    ["SEQUELIZE", t("SKILLS_HABILTIES_ADVANCED"), "sequelize", 80],
+    ["EXPRESS", t("SKILLS_HABILTIES_ADVANCED"), "nodejs", 80],
+    ["REACT NATIVE", t("SKILLS_HABILTIES_INTERMEDIATE"), "react", 60],
+    ["NEXT JS", t("SKILLS_HABILTIES_INTERMEDIATE"), "nextjs", 70],
+    ["VUE", t("SKILLS_HABILTIES_INTERMEDIATE"), "vuejs", 70],
+    ["Angular", t("SKILLS_HABILTIES_INTERMEDIATE"), "angular", 60],
+    ["POSTGRE SQL", t("SKILLS_HABILTIES_INTERMEDIATE"), "postgresql", 60],
+    ["NEST JS", t("SKILLS_HABILTIES_INTERMEDIATE"), "nestjs", 60],
   ];
 
   // const complementos = [
@@ -51,7 +55,7 @@ const SkillsComponent = () => {
       "https://www.udemy.com/certificate/UC-7e77a4fb-ce0a-4c64-a4fc-b8049cea5a6a/",
     ],
     [
-      "JavaScript Moderno, Testing",
+      "JavaScript, Testing",
       "https://www.udemy.com/certificate/UC-158e8998-f260-4841-a727-9fefe8220689/",
     ],
     [
@@ -97,21 +101,19 @@ const SkillsComponent = () => {
                 data-aos-duration="600"
                 className="w-full flex flex-col justify-center items-center gap-6 p-5 shadow-2xl rounded-md pt-28 pb-8 xl:pb-12 "
               >
-                <h3 className="text-3xl text-center mb-1">SOBRE MÍ</h3>
+                <h3 className="text-3xl text-center mb-1 uppercase">{t('SKILLS_ABOUT_TITLE')}</h3>
                 <p className="text-center font-extralight max-w-xl">
-                  Desarrollador Fullstack autodidacta, apasionado por la{" "}
+                  {t('SKILLS_ABOUT_TEXT_1')}{" "}
                   <strong className="text-accent">
-                    informática y el diseño
+                    {t('SKILLS_ABOUT_TEXT_STRONG_1')}
                   </strong>
-                  . Proveniente de Argentina.
+                  {t('SKILLS_ABOUT_TEXT_2')}
                 </p>
                 <p className="text-center font-extralight max-w-xl">
-                  Llevo dos años especializándome en el área del Front-end y
-                  Back-end, aprendiendo{" "}
-                  <strong className="text-accent">nuevos recursos</strong> a
-                  diario para{" "}
-                  <strong className="text-accent">mejorar la calidad </strong>
-                  de mis servicios.
+                  {t('SKILLS_ABOUT_TEXT_3')}{" "}
+                  <strong className="text-accent">{t('SKILLS_ABOUT_TEXT_STRONG_2')}</strong> {t('SKILLS_ABOUT_TEXT_4')}{" "}
+                  <strong className="text-accent">{t('SKILLS_ABOUT_TEXT_STRONG_3')}</strong>
+                  {t('SKILLS_ABOUT_TEXT_5')}
                 </p>
                 <div
                   data-aos="zoom-in"
@@ -124,14 +126,14 @@ const SkillsComponent = () => {
                       href="documents/CV - Gonzalo Kerbs - ES.pdf"
                       download="CV - Gonzalo Kerbs - ES"
                     >
-                      Descargar CV (ES) <i className="fa-solid fa-download" />
+                      {t('SKILLS_CV_BUTTON')} (ES) <i className="fa-solid fa-download" />
                     </a>
                     <a
                       className="text-center bg-accent px-5 py-3 rounded-md shadow-md hover:bg-secondary hover:text-accent md:transition-all md:mt-3"
                       href="documents/CV - Gonzalo Kerbs - EN.pdf"
                       download="CV - Gonzalo Kerbs- EN"
                     >
-                      Descargar CV (EN) <i className="fa-solid fa-download" />
+                      {t('SKILLS_CV_BUTTON')} (EN) <i className="fa-solid fa-download" />
                     </a>
                   </div>
                 </div>
@@ -202,7 +204,7 @@ const SkillsComponent = () => {
             data-aos-offset="0"
             className="flex flex-col gap-5 mt-3 py-5 mx-3 shadow-2xl rounded-md w-full"
           >
-            <h3 className="text-3xl text-center mb-5">LENGUAJES</h3>
+            <h3 className="text-3xl text-center mb-5 uppercase">{t('SKILLS_LANGUAGES_SUBTITLE')}</h3>
             <div className="grid gap-4 px-3 md:grid-cols-2 md:px-12 w-full xl:grid-cols-3">
               {lenguajes.map((lenguaje, i) => (
                 <div
@@ -240,7 +242,7 @@ const SkillsComponent = () => {
             data-aos-offset="0"
             className="flex flex-col gap-5 mt-3 py-5 mx-3 shadow-2xl rounded-md w-full"
           >
-            <h3 className="text-3xl text-center mb-5">TECNOLOGÍAS</h3>
+            <h3 className="text-3xl text-center mb-5 uppercase">{t('SKILLS_TECHNOLOGIES_SUBTITLE')}</h3>
             <div className="grid px-3 md:grid-cols-2 gap-4 md:px-12 xl:grid-cols-3">
               {tecnologias.map((tecnologia, i) => (
                 <div
@@ -316,7 +318,7 @@ const SkillsComponent = () => {
             data-aos-offset="0"
             className="flex flex-col justify-center items-center gap-5 p-3 mt-3  py-5 shadow-lg rounded-md w-full"
           >
-            <h3 className="text-3xl text-center mb-5">CERTIFICACIONES</h3>
+            <h3 className="text-3xl text-center mb-5 uppercase">{t('SKILLS_CERTIFICATIONS_SUBTITLE')}</h3>
             <div className="grid grid-cols-2  gap-3 lg:grid-cols-3 xl:grid-cols-4 lg:gap-6">
               {certificaciones.map((certificacion, i) => (
                 <div

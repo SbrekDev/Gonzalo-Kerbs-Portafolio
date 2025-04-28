@@ -1,4 +1,9 @@
+import { useTranslation } from "react-i18next";
+
 const ContactComponent = () => {
+
+  const {t} = useTranslation()
+
   return (
     <>
       <section className="relative bg-primary-light" id="contact">
@@ -8,8 +13,8 @@ const ContactComponent = () => {
           data-aos-offset="0"
           className="pb-8 flex flex-col justify-center items-center gap-5 px-5 shadow-lg pt-2"
         >
-          <h3 className="text-primary-dark text-3xl text-center mb-3 py-2 px-2 border-b border-primary-dark">
-            CONTACTO
+          <h3 className="text-primary-dark text-3xl text-center mb-3 py-2 px-2 border-b border-primary-dark uppercase">
+            {t('CONTACT_SUBTITLE')}
           </h3>
           <div className="flex flex-col justify-center items-center gap-5 md:flex-row md:items-start md:gap-20">
             <div
@@ -18,8 +23,8 @@ const ContactComponent = () => {
               data-aos-offset="0"
               className="text-center flex flex-col justify-center items-center font-extralight"
             >
-              <h4 className="text-primary-dark text-xl text-center mb-3 py-2 border-b border-primary-dark w-28">
-                CORREO
+              <h4 className="text-primary-dark text-xl text-center mb-3 py-2 border-b border-primary-dark w-28 uppercase">
+                {t('CONTACT_EMAIL')}
               </h4>
               <p>gonzakerbs@gmail.com</p>
             </div>
@@ -29,8 +34,8 @@ const ContactComponent = () => {
               data-aos-offset="0"
               className="text-center flex flex-col justify-center items-center font-extralight"
             >
-              <h4 className="text-primary-dark text-xl text-center mb-3 py-2 border-b border-primary-dark w-36">
-                TELÉFONO
+              <h4 className="text-primary-dark text-xl text-center mb-3 py-2 border-b border-primary-dark w-36 uppercase">
+                {t('CONTACT_PHONE')}
               </h4>
               <p>+54 3435031208</p>
             </div>
@@ -40,8 +45,8 @@ const ContactComponent = () => {
               data-aos-offset="0"
               className="text-center flex flex-col justify-center items-center font-extralight"
             >
-              <h4 className="text-primary-dark text-xl text-center mb-3 py-2 border-b border-primary-dark w-48">
-                REDES SOCIALES
+              <h4 className="text-primary-dark text-xl text-center mb-3 py-2 border-b border-primary-dark w-48 uppercase">
+                {t('CONTACT_SOCIAL')}
               </h4>
               <div className="flex gap-5 mt-1 text-2xl text-secondary">
                 <a

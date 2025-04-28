@@ -1,9 +1,23 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next';
 
 const NavComponent = () => {
 
     const [navClick, setNavClick] = useState(false);
-    
+    const [langClick, setLangClick] = useState(false)
+    const { t, i18n } = useTranslation()
+
+    const handleLang = () => {
+      setLangClick(prev => {
+        const newLangClick = !prev;
+        if (newLangClick) {
+          i18n.changeLanguage('es');
+        } else {
+          i18n.changeLanguage('en');
+        }
+        return newLangClick;
+      });
+    };
 
     const desplegarNav = () => {
         setNavClick(!navClick);
@@ -27,34 +41,49 @@ const NavComponent = () => {
       </div>
       <div
         className={`${
-          navClick ? "" : "hidden md:flex"
-        } w-full flex flex-col md:flex-row justify-center md:gap-5 lg:gap-8 items-center list-none font-normal`}
+          navClick ? "md:gap-5 lg:gap-8 justify-center" : "hidden md:flex md:justify-start lg:justify-center"
+        } w-full flex flex-col md:flex-row items-center list-none font-normal`}
       >
         <a
           className="px-9 py-2 md:hover:bg-primary-light md:hover:transition-all md:hover:text-primary-dark hover:cursor-pointer rounded-lg"
           href="#home"
         >
-          Inicio
+          {t('NAV_START')}
         </a>
 
         <a
           className="px-9 py-2 md:hover:bg-primary-light md:hover:transition-all md:hover:text-primary-dark hover:cursor-pointer rounded-lg"
           href="#profile"
         >
-          Perfil
+          {t('NAV_PROFILE')}
         </a>
         <a
           className="px-9 py-2 md:hover:bg-primary-light md:hover:transition-all md:hover:text-primary-dark hover:cursor-pointer rounded-lg"
           href="#projects"
         >
-          Proyectos
+          {t('NAV_PROJECTS')}
         </a>
         <a
           className="px-9 py-2 md:hover:bg-primary-light md:hover:transition-all md:hover:text-primary-dark hover:cursor-pointer rounded-lg"
           href="#contact"
         >
-          Contacto
+          {t('NAV_CONTACT')}
         </a>
+      </div>
+      <div className={`flex justify-center md:justify-end items-center gap-5 absolute inset-0 md:right-16`}>
+        <p className={`${langClick ? '' : 'text-accent'}`}>EN</p>
+
+        <button
+          onClick={handleLang}
+          className={`relative w-16 h-7 ${langClick ? 'bg-accent' : 'bg-secondary'} rounded-full p-1 transition-all duration-200 ease-in-out`}>
+
+          <div className={`
+            absolute top-[2px] left-1 size-6 rounded-full shadow-md  transition-all duration-200 ease-in-out
+            ${langClick ? 'translate-x-8 bg-secondary' : 'translate-x-0 bg-accent'}
+          `}></div>
+        </button>
+
+        <p className={`${langClick ? 'text-accent' : ''}`}>ES</p>
       </div>
     </nav>
   );
