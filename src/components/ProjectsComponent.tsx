@@ -192,7 +192,7 @@ const ProjectsComponent = () => {
                       {proyecto.iconos.map((icon) => (
                         <div key={icon} className="flex flex-col items-center mr-1">
                           <i className={`devicon-${icon}-plain text-accent text-xl`}/>
-                          <p className="font-extralight text-sm">{icon}</p>
+                          <p className="font-extralight text-sm capitalize">{icon}</p>
                         </div>
                       ))}
                     </div>
