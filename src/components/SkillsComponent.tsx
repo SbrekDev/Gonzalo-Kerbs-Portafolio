@@ -72,7 +72,7 @@ const SkillsComponent = () => {
 
   return (
     <div className="relative bg-primary-dark text-primary-light px-3 md:px-12 xl:px-32 3xl:px-96 z-40 overflow-hidden">
-      <section className="profile pt-28" id="profile">
+      <section className="profile pt-10 lg:pt-28" id="profile">
         <div className="flex flex-col items-center">
           <div className="flex flex-col items-center w-full xl:flex-row xl:gap-3">
             <div className="flex justify-center my-3 xl:mb-0 w-full rounded-xl">
