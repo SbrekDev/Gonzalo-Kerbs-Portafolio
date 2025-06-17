@@ -126,7 +126,7 @@ const ProjectsComponent = () => {
           data-aos="fade-up"
           data-aos-duration="600"
           data-aos-offset="0"
-          className="flex items-center bg-primary-dark justify-center p-5 w-full md:gap-3 md:pt-16 md:pb-10 lg:pb-12 xl:gap-24 z-30"
+          className="flex items-center justify-center p-5 w-full md:gap-3 md:pt-16 md:pb-10 lg:pb-12 xl:gap-24 z-30"
         >
           <div className="hidden lg:block absolute w-[50%] h-96 rounded-r-full left-[-35%] bg-gradient-to-r from-primary-dark to-accent shadow-2xl"></div>
           <div className="hidden lg:block absolute w-[50%] h-96 rounded-l-full right-[-35%] bg-gradient-to-l from-primary-dark to-accent shadow-2xl"></div>
@@ -156,7 +156,7 @@ const ProjectsComponent = () => {
           data-aos="fade-up"
           data-aos-duration="600"
           data-aos-offset="0"
-          className="flex flex-col items-center bg-primary-dark justify-center  p-5 w-full mt-10 z-30"
+          className="flex flex-col items-center justify-center  p-5 w-full mt-10 z-30"
         >
           <h3 className=" text-3xl text-center mb-12 py-2 px-2 uppercase">
             {t('PROJECTS_WORK_SUBTITLE')}
