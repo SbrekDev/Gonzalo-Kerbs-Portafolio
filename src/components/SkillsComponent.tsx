@@ -133,7 +133,7 @@ const SkillsComponent = () => {
                   data-aos-offset="0"
                   key={`lenguaje - ${i}`}
                 >
-                  <div className="flex justify-between min-w-[220px] items-center gap-4 rounded-md w-full px-5 py-3 border-t-[3px] border-accent shadow-xl bg-secondary/30 select-none md:transition-all md:hover:scale-95">
+                  <div className="flex justify-between w-72 md:min-w-[220px] items-center gap-4 rounded-md md:w-full px-5 py-3 border-t-[3px] border-accent shadow-xl bg-secondary/30 select-none md:transition-all md:hover:scale-95">
                     <div className="w-full">
                       <p className="font-semibold">{skills[0]}</p>
                       <div className=" flex gap-1 flex-col">
@@ -158,11 +158,11 @@ const SkillsComponent = () => {
                   data-aos="flip-down"
                   data-aos-duration="300"
                   key={`certificacion - ${i}`}
-                  className="w-[220px]"
+                  className="w-72 md:w-[220px]"
                 >
                   <a
                     target="_blank"
-                    className="border-2 border-accent rounded-md flex flex-col justify-center items-center gap-2 shadow-xl h-40 md:h-48 md:p-6 md:hover:scale-95 md:transition-all"
+                    className="border-2 border-accent rounded-md flex flex-col justify-center items-center gap-2 shadow-xl h-28 md:h-48 p-1 md:p-6 md:hover:scale-95 md:transition-all"
                     href={certificacion[1]}
                   >
                     <i className="fa-solid fa-graduation-cap text-3xl text-accent md:text-6xl md:mb-5" />

@@ -31,7 +31,7 @@ const PresentationComponent = () => {
               />
             </div>
           </div>
-          <div className="flex justify-center flex-col xl:mt-0 xl:items-start select-none">
+          <div className="flex justify-center flex-col mt-10 md:mt-0 xl:items-start select-none">
             <h1
               data-aos="fade-right"
               data-aos-duration="500"
