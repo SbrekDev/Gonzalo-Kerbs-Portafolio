@@ -47,7 +47,7 @@ const ContactComponent = () => {
             <div
               className="text-center flex flex-col justify-center items-center"
             >
-              <h4 className="text-xl text-center mb-3 py-2 border-b-2 border-accent max-w-64 uppercase">
+              <h4 className="text-xl text-center mb-3 py-2 border-b-2 rounded-md border-accent max-w-64 uppercase">
                 {t('CONTACT_EMAIL')}
               </h4>
               <img src="/images/email.png" className="w-56 pt-5" alt="email direction" />
