@@ -19,7 +19,7 @@ const ContactComponent = () => {
 
   return (
     <>
-      <section className="relative bg-primary-dark text-primary-light pb-8 pt-0 lg:pt-48 flex flex-col items-center px-3 md:px-12 xl:px-32 3xl:px-96 overflow-hidden" id="contact">
+      <section className="relative bg-primary-dark text-primary-light pb-8 pt-10 lg:pt-48 flex flex-col items-center px-3 md:px-12 xl:px-32 3xl:px-96 overflow-hidden" id="contact">
 
           <div
             data-aos="fade-up"
