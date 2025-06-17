@@ -13,32 +13,29 @@ const PresentationComponent = () => {
     AOS.init();
   }, []);
   return (
-    <div className="relative">
+    <div className="relative bg-primary-dark overflow-hidden ">
       <div
-        className="h-screen w-full bg-fixed bg-cover bg-center absolute -z-10"
-        style={{ backgroundImage: 'url("images/bg2.webp")' }}
-      ></div>
-      <div
-        className="w-full h-screen flex flex-col justify-center xl:justify-center"
+        className="w-full h-screen flex flex-col justify-center"
         id="home"
       >
-        <div className="flex flex-col justify-center items-center gap-6 backdrop-blur-sm bg-primary-dark/25 rounded-md w-11/12 mx-auto lg:w-full py-16 xl:flex-row xl:gap-20">
-          <div className="bg-primary-dark/55 md:p-10 rounded-xl">
-            <div className="flex justify-center items-center size-72">
+        <div className="flex flex-col justify-center items-center gap-12  w-11/12 mx-auto lg:w-full py-16 xl:flex-row xl:gap-20">
+          <div className="md:p-10">
+            <div className="flex justify-center items-center size-72 relative">
+              <div className="absolute w-96 h-[220%] rounded-b-full left-1/2 top-[-100%] -translate-x-1/2 bg-gradient-to-b from-primary-dark to-accent shadow-2xl"></div>
               <img
                 data-aos="zoom-in"
                 data-aos-duration="600"
-                src="images/profile__img2.webp"
+                src="images/profile__img2.png"
                 alt="retrato gonzalo"
-                className="w-56 md:w-72"
+                className="w-56 md:w-72 rounded-full"
               />
             </div>
           </div>
-          <div className="flex justify-center flex-col  xl:mt-0 xl:items-start select-none">
+          <div className="flex justify-center flex-col xl:mt-0 xl:items-start select-none">
             <h1
               data-aos="fade-right"
               data-aos-duration="500"
-              className="w-72 md:w-full text-3xl md:text-6xl font-semibold text-center text-primary-dark xl:text-[6rem]"
+              className="w-72 md:w-full text-3xl md:text-6xl font-semibold text-center text-accent xl:text-[6rem]"
             >
               Gonzalo Kerbs
             </h1>
@@ -52,12 +49,12 @@ const PresentationComponent = () => {
             <div className="flex justify-center gap-4 text-2xl text-primary-light/70 drop-shadow-md mt-5 md:text-3xl xl:text-4xl md:gap-8">
               <div
                 data-aos="zoom-in"
-                data-aos-duration="1500"
+                data-aos-duration="500"
                 data-aos-offset="0"
               >
                 <div className="md:hover:scale-125 md:transition-all">
                   <a
-                    className="hover:text-primary-dark md:hover:scale-125 md:transition-all "
+                    className="hover:text-accent md:hover:scale-125 md:transition-all "
                     href="https://www.linkedin.com/in/gonzalo-kerbs"
                     target="_blank"
                     aria-label="link linkedin"
@@ -68,44 +65,12 @@ const PresentationComponent = () => {
               </div>
               <div
                 data-aos="zoom-in"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
                 data-aos-offset="0"
               >
                 <div className="md:hover:scale-125 md:transition-all">
                   <a
-                    className="hover:text-primary-dark md:duration-200 "
-                    href="https://api.whatsapp.com/send?phone=543435031208"
-                    target="_blank"
-                    aria-label="link whatsapp"
-                  >
-                    <i className="fa-brands fa-whatsapp" />
-                  </a>
-                </div>
-              </div>
-              <div
-                data-aos="zoom-in"
-                data-aos-duration="2500"
-                data-aos-offset="0"
-              >
-                <div className="md:hover:scale-125 md:transition-all">
-                  <a
-                    className="hover:text-primary-dark md:duration-200 "
-                    href="https://www.instagram.com/gonzaakerbs"
-                    target="_blank"
-                    aria-label="link instagram"
-                  >
-                    <i className="fa-brands fa-instagram" />
-                  </a>
-                </div>
-              </div>
-              <div
-                data-aos="zoom-in"
-                data-aos-duration="3000"
-                data-aos-offset="0"
-              >
-                <div className="md:hover:scale-125 md:transition-all">
-                  <a
-                    className="hover:text-primary-dark md:duration-200 "
+                    className="hover:text-accent md:duration-200 "
                     href="https://github.com/SbrekDev"
                     target="_blank"
                     aria-label="link github x"
@@ -124,7 +89,7 @@ const PresentationComponent = () => {
           className="flex justify-center absolute bottom-10 right-0 left-0"
         >
           <a
-            className="text-primary-light hover:scale-150 md:transition-all hover:text-primary-dark "
+            className="text-primary-light hover:scale-150 md:transition-all hover:text-accent "
             href="#profile"
             aria-label="siguiente pagina"
           >

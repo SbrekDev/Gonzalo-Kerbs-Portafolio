@@ -11,7 +11,7 @@ export default {
           light: "#eeeeee",
           dark: "#222831",
         },
-        secondary: "#393e46",
+        secondary: "#333942",
         accent: "#00adb5",
         accent2: "#00afee"
       },
@@ -21,6 +21,7 @@ export default {
       },
       screens: {
       xl: '1350px',
+      '3xl' : '1700px'
     },
     },
   },
