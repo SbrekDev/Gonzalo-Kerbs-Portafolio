@@ -50,7 +50,7 @@ const ContactComponent = () => {
               <h4 className="text-xl text-center mb-3 py-2 border-b-2 border-accent max-w-64 uppercase">
                 {t('CONTACT_EMAIL')}
               </h4>
-              <img src="/images/email.png" className="w-56 pt-5" />
+              <img src="/images/email.png" className="w-56 pt-5" alt="email direction" />
             </div>
             <div className="relative w-full">
             <button onClick={copyEmail} className="text-center w-full bg-accent px-5 py-2 rounded-md shadow-md hover:bg-secondary hover:text-accent md:transition-all">{t("CONTACT_COPY_BUTTON")}</button>
