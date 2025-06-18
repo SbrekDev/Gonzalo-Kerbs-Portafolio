@@ -119,7 +119,7 @@ const ProjectsComponent = () => {
   return (
     <>
       <section
-        className="relative bg-primary-dark text-primary-light lg:pb-8 pt-10 lg:pt-20 flex flex-col items-center px-3 md:px-12 xl:px-32 3xl:px-96 overflow-hidden"
+        className="relative z-30 text-primary-light lg:pb-8 pt-10 lg:pt-20 flex flex-col items-center px-3 md:px-12 xl:px-32 3xl:px-96 overflow-hidden"
         id="projects"
       >
         <div
@@ -128,8 +128,8 @@ const ProjectsComponent = () => {
           data-aos-offset="0"
           className="flex items-center justify-center p-5 w-full md:gap-3 md:pt-16 md:pb-10 lg:pb-12 xl:gap-24 z-30"
         >
-          <div className="hidden lg:block absolute w-[50%] h-96 rounded-r-full left-[-35%] bg-gradient-to-r from-primary-dark to-accent shadow-2xl"></div>
-          <div className="hidden lg:block absolute w-[50%] h-96 rounded-l-full right-[-35%] bg-gradient-to-l from-primary-dark to-accent shadow-2xl"></div>
+          <div className="hidden lg:block absolute w-[50%] h-96 rounded-r-full left-[-35%] bg-gradient-to-r from-transparent to-accent"></div>
+          <div className="hidden lg:block absolute w-[50%] h-96 rounded-l-full right-[-35%] bg-gradient-to-l from-transparent to-accent"></div>
           <div className="flex flex-col justify-center items-center gap-5 px-6">
             <h3 className="text-3xl text-center mb-3 py-2 px-2 border-b border-primary-dark uppercase">
               {t('PROJECTS_EXPERIENCE_SUBTITLE')}
@@ -192,7 +192,7 @@ const ProjectsComponent = () => {
                       {proyecto.iconos.map((icon) => (
                         <div key={icon} className="flex flex-col items-center mr-1">
                           <i className={`devicon-${icon}-plain text-accent text-xl`}/>
-                          <p className="font-extralight text-sm capitalize">{icon}</p>
+                          <p className="font-extralight text-sm">{icon}</p>
                         </div>
                       ))}
                     </div>

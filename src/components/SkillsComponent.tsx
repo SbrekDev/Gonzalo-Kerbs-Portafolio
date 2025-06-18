@@ -71,7 +71,7 @@ const SkillsComponent = () => {
   
 
   return (
-    <div className="relative bg-primary-dark text-primary-light px-3 md:px-12 xl:px-32 3xl:px-96 z-40 overflow-hidden">
+    <div className="relative z-30 text-primary-light px-3 md:px-12 xl:px-32 3xl:px-96 overflow-hidden">
       <section className="profile pt-10 lg:pt-28" id="profile">
         <div className="flex flex-col items-center">
           <div className="flex flex-col items-center w-full xl:flex-row xl:gap-3">
@@ -82,8 +82,8 @@ const SkillsComponent = () => {
                 data-aos-offset="0"
                 className="relative w-full flex flex-col justify-center items-center gap-6 px-5 rounded-md "
               >
-                <div className="hidden lg:block absolute w-[50%] h-96 rounded-r-full left-[-35%] bg-gradient-to-r from-primary-dark to-accent shadow-2xl"></div>
-                <div className="hidden lg:block absolute w-[50%] h-96 rounded-l-full right-[-35%] bg-gradient-to-l from-primary-dark to-accent shadow-2xl"></div>
+                <div className="hidden lg:block absolute w-[50%] h-96 rounded-r-full left-[-35%] bg-gradient-to-r from-transparent to-accent"></div>
+                <div className="hidden lg:block absolute w-[50%] h-96 rounded-l-full right-[-35%] bg-gradient-to-l from-transparent to-accent"></div>
                 <h3 className="text-3xl text-center mb-1 uppercase">{t('SKILLS_ABOUT_TITLE')}</h3>
                 <p className="text-center font-extralight max-w-xl">
                   {t('SKILLS_ABOUT_TEXT_1')}{" "}

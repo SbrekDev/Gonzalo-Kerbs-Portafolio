@@ -13,15 +13,18 @@ const PresentationComponent = () => {
     AOS.init();
   }, []);
   return (
-    <div className="relative bg-primary-dark overflow-hidden ">
+    <div className="relative z-30 overflow-hidden ">
+        <div className="w-full h-screen fixed top-0 bg-primary-dark"></div>
+        <img src="/wave-accent.svg" alt="efecto de animacion" className="fixed top-0 right-[-680px] scale-y-[-1] rotate-90"/>
+        <img src="/wave-accent.svg" alt="efecto de animacion" className="fixed top-0 left-[-680px] rotate-90"/>
       <div
         className="w-full h-screen flex flex-col justify-center"
         id="home"
       >
-        <div className="flex flex-col justify-center items-center gap-12  w-11/12 mx-auto lg:w-full py-16 xl:flex-row xl:gap-20">
+        <div className="flex flex-col justify-center items-center gap-12 w-11/12 mx-auto lg:w-full py-16 xl:flex-row xl:gap-20">
           <div className="md:p-10">
             <div className="flex justify-center items-center size-72 relative">
-              <div className="absolute w-96 h-[220%] rounded-b-full left-1/2 top-[-100%] -translate-x-1/2 bg-gradient-to-b from-primary-dark to-accent shadow-2xl"></div>
+              <div className="absolute w-96 h-[220%] rounded-b-full left-1/2 top-[-100%] -translate-x-1/2 bg-gradient-to-b from-transparent to-accent shadow-2xl"></div>
               <img
                 data-aos="zoom-in"
                 data-aos-duration="600"
@@ -54,7 +57,7 @@ const PresentationComponent = () => {
               >
                 <div className="md:hover:scale-125 md:transition-all">
                   <a
-                    className="hover:text-accent md:hover:scale-125 md:transition-all "
+                    className="hover:text-accent md:hover:scale-125 md:transition-all"
                     href="https://www.linkedin.com/in/gonzalo-kerbs"
                     target="_blank"
                     aria-label="link linkedin"
