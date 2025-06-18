@@ -24,7 +24,7 @@ const PresentationComponent = () => {
         <div className="flex flex-col justify-center items-center gap-12 w-11/12 mx-auto lg:w-full py-16 xl:flex-row xl:gap-20">
           <div className="md:p-10">
             <div className="flex justify-center items-center size-72 relative">
-              <div className="absolute w-96 h-[220%] rounded-b-full left-1/2 top-[-100%] -translate-x-1/2 bg-gradient-to-b from-transparent to-accent shadow-2xl"></div>
+              <div className="absolute w-96 h-[220%] rounded-b-full left-1/2 top-[-100%] -translate-x-1/2 bg-gradient-to-b from-transparent to-accent"></div>
               <img
                 data-aos="zoom-in"
                 data-aos-duration="600"
