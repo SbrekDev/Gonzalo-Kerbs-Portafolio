@@ -70,13 +70,13 @@ const NavComponent = () => {
 
         <button
           onClick={handleLang}
-          className={`relative w-16 h-7 ${langClick ? 'bg-accent' : 'bg-secondary'} rounded-full p-1 transition-all duration-200 ease-in-out`}
+          className={`relative w-16 h-7 bg-accent rounded-full p-1 transition-all duration-200 ease-in-out`}
           aria-label="Language Toggle"
           >
 
           <div className={`
-            absolute top-[2px] left-1 size-6 rounded-full shadow-md  transition-all duration-200 ease-in-out
-            ${langClick ? 'translate-x-8 bg-secondary' : 'translate-x-0 bg-accent'}
+            absolute top-[2px] left-1 size-6 rounded-full shadow-md bg-primary-dark transition-all duration-200 ease-in-out
+            ${langClick ? 'translate-x-8' : 'translate-x-0 '}
           `}></div>
         </button>
 
