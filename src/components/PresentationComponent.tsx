@@ -89,7 +89,7 @@ const PresentationComponent = () => {
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-offset="0"
-          className="flex justify-center h-56 md:h-24 absolute bottom-20 md:bottom-5 right-0 left-0"
+          className="flex justify-center h-48 md:h-24 absolute bottom-20 md:bottom-5 right-0 left-0"
         >
           <a
             className="text-primary-light hover:scale-150 md:transition-all hover:text-accent "
