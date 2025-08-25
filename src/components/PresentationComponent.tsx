@@ -14,7 +14,7 @@ const PresentationComponent = () => {
   }, []);
   return (
     <div className="relative z-30 overflow-hidden ">
-        <div className="w-full h-screen fixed top-0 bg-primary-dark"></div>
+      <div className="w-full h-screen fixed top-0 bg-primary-dark"></div>
       <img src="/wave-accent.svg" alt="efecto de animacion" className="fixed top-0 right-[-680px] 4xl:right-[-820px] scale-y-[-1] rotate-90"/>
       <img src="/wave-accent.svg" alt="efecto de animacion" className="fixed top-0 left-[-680px] 4xl:left-[-820px] rotate-90"/>
       <div
