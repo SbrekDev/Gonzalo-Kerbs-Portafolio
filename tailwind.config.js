@@ -21,7 +21,8 @@ export default {
       },
       screens: {
       xl: '1350px',
-      '3xl' : '1700px'
+      '3xl' : '1700px',
+      '4xl' : '2300px'
     },
     },
   },
