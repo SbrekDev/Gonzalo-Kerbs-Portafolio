@@ -45,7 +45,7 @@ const PresentationComponent = () => {
             <h2
               data-aos="fade-left"
               data-aos-duration="1000"
-              className="mt-1 text-primary-light text-center md:text-3xl xl:text-5xl"
+              className="mt-1 text-primary-light text-center md:text-3xl xl:text-5xl font-thin"
             >
               {t('PRESENTATION_SUBTITLE')}
             </h2>

@@ -131,7 +131,7 @@ const ProjectsComponent = () => {
           <div className="hidden lg:block absolute w-[50%] h-96 rounded-r-full left-[-35%] bg-gradient-to-r from-transparent to-accent"></div>
           <div className="hidden lg:block absolute w-[50%] h-96 rounded-l-full right-[-35%] bg-gradient-to-l from-transparent to-accent"></div>
           <div className="flex flex-col justify-center items-center gap-5 px-6">
-            <h3 className="text-3xl text-center mb-3 py-2 px-2 border-b border-primary-dark uppercase">
+            <h3 className="text-3xl text-center mb-3 py-2 px-2 border-b border-primary-dark uppercase font-semibold">
               {t('PROJECTS_EXPERIENCE_SUBTITLE')}
             </h3>
             <p className="text-center font-extralight max-w-xl">
@@ -158,7 +158,7 @@ const ProjectsComponent = () => {
           data-aos-offset="0"
           className="flex flex-col items-center justify-center  p-5 w-full mt-10 z-30"
         >
-          <h3 className=" text-3xl text-center mb-12 py-2 px-2 uppercase">
+          <h3 className=" text-3xl text-center mb-12 py-2 px-2 uppercase font-thin">
             {t('PROJECTS_WORK_SUBTITLE')}
           </h3>
 

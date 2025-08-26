@@ -84,7 +84,7 @@ const SkillsComponent = () => {
               >
                 <div className="hidden lg:block absolute w-[50%] h-96 rounded-r-full left-[-35%] bg-gradient-to-r from-transparent to-accent"></div>
                 <div className="hidden lg:block absolute w-[50%] h-96 rounded-l-full right-[-35%] bg-gradient-to-l from-transparent to-accent"></div>
-                <h3 className="text-3xl text-center mb-1 uppercase">{t('SKILLS_ABOUT_TITLE')}</h3>
+                <h3 className="text-3xl text-center mb-1 uppercase font-semibold">{t('SKILLS_ABOUT_TITLE')}</h3>
                 <p className="text-center font-extralight max-w-xl">
                   {t('SKILLS_ABOUT_TEXT_1')}{" "}
                   <strong className="text-accent">
@@ -124,7 +124,7 @@ const SkillsComponent = () => {
             </div>
           </div>
           <div className="flex flex-col gap-5 my-10 py-5 mx-3 w-full">
-            <h3 className="text-3xl text-center mb-5 uppercase">{t('SKILLS_SUBTITLE')}</h3>
+            <h3 className="text-3xl text-center mb-5 uppercase font-thin">{t('SKILLS_SUBTITLE')}</h3>
             <div className="flex flex-wrap justify-center gap-4 py-5 md:px-6 w-full">
               {skills.map((skills, i) => (
                 <div
@@ -151,7 +151,7 @@ const SkillsComponent = () => {
           </div>
 
           <div className="flex flex-col justify-center items-center gap-5 p-3 mt-3 py-5 w-full">
-            <h3 className="text-3xl text-center mb-5 uppercase">{t('SKILLS_CERTIFICATIONS_SUBTITLE')}</h3>
+            <h3 className="text-3xl text-center mb-5 uppercase font-thin">{t('SKILLS_CERTIFICATIONS_SUBTITLE')}</h3>
             <div className="flex flex-wrap justify-center gap-4 py-5 md:px-6 w-full">
               {certificaciones.map((certificacion, i) => (
                 <div

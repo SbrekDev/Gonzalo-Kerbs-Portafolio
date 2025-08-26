@@ -30,7 +30,7 @@ const ContactComponent = () => {
           <div className="hidden lg:block absolute w-[50%] h-96 rounded-r-full left-[-35%] bg-gradient-to-r from-transparent to-accent"></div>
           <div className="hidden lg:block absolute w-[50%] h-96 rounded-l-full right-[-35%] bg-gradient-to-l from-transparent to-accent"></div>
             <div className="flex flex-col justify-center items-center gap-5 px-6">
-              <h3 className="text-3xl text-center mb-3 py-2 px-2 border-b border-primary-dark uppercase">
+              <h3 className="text-3xl text-center mb-3 py-2 px-2 border-b border-primary-dark uppercase font-semibold">
                 {t('CONTACT_SUBTITLE')}
               </h3>
               <p className="text-center font-extralight max-w-xl">
