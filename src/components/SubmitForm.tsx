@@ -73,7 +73,7 @@ export default function SubmitForm() {
                 onLoad={handleIframeLoad}
             />
 
-            <p className="absolute left-1/2 -translate-x-1/2 bottom-[-40px] w-full text-accent text-center mx-auto">
+            <p className="absolute left-1/2 -translate-x-1/2 bottom-[-60px] lg:bottom-[-40px] w-full text-accent text-center mx-auto">
                 {result} {result && result !== t('CONTACT_FORM_RESPONSE_PENDING') ? (
                     <i className={`fa-solid fa-circle-${result === t('CONTACT_FORM_RESPONSE_SUCCESS') ? 'check' : 'xmark'}`}></i>
                 ) : null}
