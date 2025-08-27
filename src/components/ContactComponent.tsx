@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import SubmitForm from "./SubmitForm";
 
 const ContactComponent = () => {
 
@@ -19,7 +20,7 @@ const ContactComponent = () => {
 
   return (
     <>
-      <section className="relative z-30 text-primary-light pb-8 pt-10 lg:pt-48 flex flex-col items-center px-3 md:px-12 xl:px-32 3xl:px-96 overflow-hidden" id="contact">
+      <section className="relative z-30 text-primary-light pb-8 pt-10 lg:pt-40 flex flex-col items-center px-3 md:px-12 xl:px-32 3xl:px-96 overflow-hidden" id="contact">
 
           <div
             data-aos="fade-up"
@@ -40,25 +41,33 @@ const ContactComponent = () => {
                 {t('CONTACT_TEXT_STRONG_1')}
                 </strong>
               {t('CONTACT_TEXT_2')}
-              </p>              
+              </p> 
+              <p className="text-center font-extralight max-w-xl">
+                {t('CONTACT_TEXT_3')}
+              </p>             
             </div>
           </div>
+          <h4 className="text-3xl font-thin w-full text-center py-2 mt-28 mb-12 rounded-md max-w-64 uppercase">
+              {t('CONTACT_FORM_TITLE')}
+          </h4>
+          <SubmitForm />
           <div className="relative flex flex-col justify-center items-center gap-5 h-96">
             <div
               className="text-center flex flex-col justify-center items-center"
             >
-              <h4 className="text-xl w-full text-center mb-3 py-2 border-b-2 rounded-md border-accent max-w-64 uppercase">
+              <h4 className="text-3xl font-thin w-full text-center py-2 mb-3 rounded-md max-w-96 uppercase">
                 {t('CONTACT_EMAIL')}
               </h4>
               <img src="/images/email.png" className="w-56 pt-5" alt="email direction" />
             </div>
-            <div className="relative w-full">
-            <button onClick={copyEmail} className="text-center w-full bg-accent px-5 py-2 rounded-md shadow-md hover:bg-secondary hover:text-accent md:transition-all">{t("CONTACT_COPY_BUTTON")}</button>
+            <div className="relative w-full flex justify-center">
+            <button onClick={copyEmail} className="text-center w-full max-w-64 bg-accent px-5 py-3 rounded-md shadow-md hover:bg-secondary hover:text-accent md:transition-all">{t("CONTACT_COPY_BUTTON")}</button>
               {copied && (
               <p className="absolute left-1/2 -translate-x-1/2 bottom-[-36px] w-56 text-accent text-center mx-auto">{t('CONTACT_COPY_MESSAGE')} <i className="fa-solid fa-circle-check"></i></p>
               )}
             </div>
           </div>
+
 
         <footer className="p-5 w-full flex justify-center md:justify-between md:items-center md:px-20">
           <div>

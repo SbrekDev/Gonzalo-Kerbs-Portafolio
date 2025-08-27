@@ -60,7 +60,16 @@
     "CONTACT_TEXT_1" : "Actualmente me encuentro en búsqueda de oportunidades laborales, ya sea a tiempo completo o medio tiempo, donde pueda ",
     "CONTACT_TEXT_STRONG_1" : "aportar mis habilidades técnicas, crecer profesionalmente y colaborar en equipo ",
     "CONTACT_TEXT_2" : "dentro de un entorno sólido y profesional.",
-    "CONTACT_EMAIL" : "Hablemos",
+    "CONTACT_TEXT_3" : "Puedes ponerte en contacto conmigo completando el siguiente formulario o copiando mi dirección de correo electrónico para enviarme un mensaje directamente.",
+    "CONTACT_FORM_TITLE" : "Hablemos",
+    "CONTACT_FORM_NAME" : "Nombre",
+    "CONTACT_FORM_EMAIL" : "Correo",
+    "CONTACT_FORM_MESSAGE" : "Mensaje",
+    "CONTACT_FORM_BUTTON" : "Enviar",
+    "CONTACT_FORM_RESPONSE_PENDING" : "Enviando tu mensaje...",
+    "CONTACT_FORM_RESPONSE_SUCCESS" : "¡Tu mensaje ha sido enviado con éxito!",
+    "CONTACT_FORM_RESPONSE_ERROR" : "Ha ocurrido un error, pero puedes copiar el correo de contacto aquí abajo.",
+    "CONTACT_EMAIL" : "Correo de Contacto",
     "CONTACT_COPY_BUTTON" : "Copiar",
     "CONTACT_COPY_MESSAGE" : "Copiado al portapapeles"
 

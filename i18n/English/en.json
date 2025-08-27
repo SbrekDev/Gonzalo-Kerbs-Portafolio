@@ -60,7 +60,16 @@
     "CONTACT_TEXT_1" : "I am currently seeking full-time or part-time opportunities where I can ",
     "CONTACT_TEXT_STRONG_1" : " contribute my technical skills, grow professionally, and collaborate ",
     "CONTACT_TEXT_2" : "within a strong and professional team environment.",
-    "CONTACT_EMAIL" : "Get in Touch",
+    "CONTACT_TEXT_3" : "You can contact me by filling out the form below, or by copying my email address and sending me a message directly.",
+    "CONTACT_FORM_TITLE" : "Get in Touch",
+    "CONTACT_FORM_NAME" : "Name",
+    "CONTACT_FORM_EMAIL" : "Email",
+    "CONTACT_FORM_MESSAGE" : "Message",
+    "CONTACT_FORM_BUTTON" : "Send",
+    "CONTACT_FORM_RESPONSE_PENDING" : "Sending your message...",
+    "CONTACT_FORM_RESPONSE_SUCCESS" : "Your message has been sent successfully!",
+    "CONTACT_FORM_RESPONSE_ERROR" : "An error has occurred, but you can copy the contact email below.",
+    "CONTACT_EMAIL" : "Contact Email",
     "CONTACT_COPY_BUTTON" : "Copy",
     "CONTACT_COPY_MESSAGE" : "Copied to clipboard"
 
